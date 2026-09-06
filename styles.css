@@ -1,0 +1,48 @@
+/* Variables CSS personalizadas */
+:root {
+    --transition-speed: 0.3s;
+}
+
+/* Transiciones globales para un cambio de tema suave */
+body {
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+/* Estilos de la sección Hero */
+.hero-section {
+    min-height: 70vh;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 3rem 1rem;
+}
+
+/* Cursor parpadeante para el efecto Typewriter */
+#typewriter::after {
+    content: '|';
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Efectos Hover en las tarjetas de Bootstrap */
+.custom-card {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.125);
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Ajustes para el Modo Oscuro */
+[data-bs-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.2) 0%, rgba(33, 37, 41, 1) 100%);
+}
+
+[data-bs-theme="dark"] .custom-card {
+    border-color: rgba(255,255,255,0.1);
+}
