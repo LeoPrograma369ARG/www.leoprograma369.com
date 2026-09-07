@@ -148,3 +148,44 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     color: #a39cf4 !important; /* Un violeta más claro para fondo oscuro */
 }
+
+/* Importar fuente profesional Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+
+/* ==========================================
+   1. TÍTULO: Espaciado, fuente y color sólido
+   ========================================== */
+.brand-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem !important;
+    padding-right: 5rem; /* Abarca más espacio en blanco hacia la derecha */
+}
+
+/* Fuerza el azul violáceo y anula cualquier degradado previo */
+.title-color {
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    color: var(--btn-violaceo) !important;
+    font-weight: 800;
+}
+
+/* ==========================================
+   3. MENÚ: Fuente profesional y color violáceo
+   ========================================== */
+.navbar-nav .menu-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--btn-violaceo) !important; 
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .menu-link:hover, 
+.navbar-nav .menu-link.active {
+    background-color: rgba(91, 80, 230, 0.12);
+    color: var(--btn-violaceo) !important;
+}
+
+[data-bs-theme="dark"] .navbar-nav .menu-link {
+    color: #a39cf4 !important; /* Tono más claro para que se lea en modo oscuro */
+}
