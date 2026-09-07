@@ -1,21 +1,81 @@
-/* Variables CSS personalizadas */
+/* ==========================================================
+   5, 6 - ESTILOS GENERALES, COLORES Y FUENTES SEO OPTIMIZADAS
+   ========================================================== */
+
 :root {
+    /* Tipografía optimizada */
+    --bs-body-font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    
+    /* Colores Personalizados */
+    --btn-violaceo: #5b50e6;        /* Azul Violáceo Principal */
+    --btn-violaceo-hover: #483dc4;  /* Azul Violáceo Oscuro al Hover */
+    --red-shadow: rgba(220, 53, 69, 0.45); /* Sombra Roja para atención */
     --transition-speed: 0.3s;
 }
 
-/* Transiciones globales para un cambio de tema suave */
 body {
     transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+    font-family: var(--bs-body-font-family);
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Estilos de la sección Hero */
-.hero-section {
-    min-height: 70vh;
-    background: linear-gradient(135deg, rgba(13, 110, 253, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
-    padding: 3rem 1rem;
+.text-accent {
+    color: var(--btn-violaceo) !important;
 }
 
-/* Cursor parpadeante para el efecto Typewriter */
+/* ==========================================================
+   BOTONES AZUL VIOLÁCEO Y SOMBREADO ROJO (REQUISITO 5)
+   ========================================================== */
+
+.btn-violaceo {
+    background-color: var(--btn-violaceo);
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    transition: all var(--transition-speed) ease;
+}
+
+.btn-violaceo:hover {
+    background-color: var(--btn-violaceo-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Sombra Roja para Llamar la Atención */
+.shadow-red {
+    box-shadow: 0 4px 15px var(--red-shadow) !important;
+}
+
+.shadow-red:hover {
+    box-shadow: 0 6px 20px rgba(220, 53, 69, 0.7) !important;
+}
+
+/* ==========================================================
+   TARJETAS Y EFECTOS HOVER
+   ========================================================== */
+
+.custom-card {
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease, border-color var(--transition-speed) ease;
+    border-radius: 12px;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(220, 53, 69, 0.2) !important; /* Sombra roja sutil al pasar cursor */
+}
+
+.hover-grow {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.03);
+}
+
+/* ==========================================================
+   MÁQUINA DE ESCRIBIR (TYPEWRITER)
+   ========================================================== */
+
 #typewriter::after {
     content: '|';
     animation: blink 0.8s infinite;
@@ -26,23 +86,14 @@ body {
     50% { opacity: 0; }
 }
 
-/* Efectos Hover en las tarjetas de Bootstrap */
-.custom-card {
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-    border-radius: 12px;
-    border: 1px solid rgba(0,0,0,0.125);
-}
+/* ==========================================================
+   ADAPTACIONES PARA MODO OSCURO / MODO CLARO NATIVO DE BOOTSTRAP
+   ========================================================== */
 
-.custom-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
-}
-
-/* Ajustes para el Modo Oscuro */
 [data-bs-theme="dark"] .hero-section {
-    background: linear-gradient(135deg, rgba(13, 110, 253, 0.2) 0%, rgba(33, 37, 41, 1) 100%);
+    background: radial-gradient(circle at top, rgba(91, 80, 230, 0.15) 0%, rgba(33, 37, 41, 1) 100%);
 }
 
-[data-bs-theme="dark"] .custom-card {
-    border-color: rgba(255,255,255,0.1);
+[data-bs-theme="light"] .hero-section {
+    background: radial-gradient(circle at top, rgba(91, 80, 230, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
 }
