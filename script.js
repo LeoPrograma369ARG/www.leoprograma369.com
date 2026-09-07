@@ -78,3 +78,26 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeEffect, 500);
     }
 });
+
+// ==========================================================
+// 2 - LÓGICA DE TRADUCCIÓN (ESPAÑOL / INGLÉS)
+// ==========================================================
+const langToggleBtn = document.getElementById('lang-toggle');
+const langTextSpan = document.getElementById('lang-text');
+
+langToggleBtn.addEventListener('click', () => {
+    // Verifica el idioma actual en la etiqueta <html>
+    const currentLang = document.documentElement.getAttribute('lang') || 'es';
+    const newLang = currentLang === 'es' ? 'en' : 'es';
+    
+    // Cambia el atributo del documento
+    document.documentElement.setAttribute('lang', newLang);
+    
+    // Actualiza el texto del botón al idioma contrario
+    langTextSpan.textContent = newLang === 'es' ? 'EN' : 'ES';
+
+    // Traduce todos los elementos que tengan data-es y data-en
+    document.querySelectorAll('[data-es][data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${newLang}`);
+    });
+});
