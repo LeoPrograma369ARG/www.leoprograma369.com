@@ -3,29 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio | GitHub Pages</title>
+    <!-- Meta etiquetas SEO -->
+    <meta name="description" content="Portafolio oficial de Leo Programa 369: Proyectos, Formación, Habilidades y Recursos Educativos.">
+    <meta name="author" content="Leo Programa 369">
+    <title>Leo Programa 369 | Portafolio & Educación</title>
+
+    <!-- Tipografía SEO Optimizada: Plus Jakarta Sans (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons (Para todas las redes sociales y elementos visuales) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- ========================================== -->
+    <!-- 1, 2, 3 - NAVBAR Y MENÚ SUPERIOR          -->
+    <!-- ========================================== -->
+    <header class="sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="#">MiRepoWeb</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <!-- Brand Name -->
+                <a class="navbar-brand fw-bold text-accent d-flex align-items-center gap-2" href="#inicio">
+                    <i class="bi bi-code-slash text-danger fs-4"></i> Leo Programa 369
+                </a>
+
+                <!-- Botón Hamburguesa Mobile -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Menú en Orden Solicitado -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#proyectos">Proyectos</a>
-                        </li>
-                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                            <button id="theme-toggle" class="btn btn-outline-light btn-sm">🌓 Modo Oscuro</button>
+                    <ul class="navbar-nav ms-auto align-items-lg-center fw-medium gap-1">
+                        <li class="nav-item"><a class="nav-link px-2 active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#hobbies">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#habilidades-tecnicas">H. Técnicas</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#habilidades-blandas">H. Blandas</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#formacion">Formación</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link px-2" href="#contacto">Contacto</a></li>
+                        
+                        <!-- Toggle Modo Claro / Oscuro -->
+                        <li class="nav-item ms-xl-3 mt-2 mt-xl-0">
+                            <button id="theme-toggle" class="btn btn-violaceo shadow-red btn-sm w-100 px-3">
+                                <i class="bi bi-moon-stars-fill me-1"></i> Modo Oscuro
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -34,65 +63,339 @@
     </header>
 
     <main>
-        <section class="hero-section text-center d-flex align-items-center justify-content-center flex-column">
-            <div class="container">
-                <h1 class="display-4 fw-bold mb-3">Hola, soy un <span id="typewriter" class="text-primary"></span></h1>
-                <p class="lead mb-4">Bienvenido a mi repositorio en GitHub Pages. Aquí comparto mis mejores ideas y código.</p>
-                <a href="https://github.com/tu-usuario" target="_blank" class="btn btn-primary btn-lg shadow-sm">Ver mi GitHub</a>
+        <!-- ========================================== -->
+        <!-- SECCIÓN 1: INICIO (HERO SECTION)           -->
+        <!-- ========================================== -->
+        <section id="inicio" class="hero-section text-center d-flex align-items-center py-5">
+            <div class="container py-4">
+                <h1 class="display-3 fw-extrabold mb-3">
+                    Hola, soy <span class="text-accent">Leo Programa 369</span>
+                </h1>
+                <h2 class="h3 text-muted mb-4">
+                    Especialista en <span id="typewriter" class="text-danger fw-bold"></span>
+                </h2>
+                <p class="lead text-muted mx-auto mb-5" style="max-width: 650px;">
+                    Bienvenido a mi ecosistema web. Aquí podrás explorar mi trayectoria, habilidades en desarrollo de software, proyectos y canales de aprendizaje.
+                </p>
+                <!-- Botones de Navegación Rápida -->
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#proyectos" class="btn btn-violaceo btn-lg shadow-red">Explorar Proyectos</a>
+                    <a href="#contacto" class="btn btn-outline-danger btn-lg">Contacto Directo</a>
+                </div>
             </div>
         </section>
 
-        <section id="proyectos" class="container py-5">
-            <h2 class="text-center mb-5 fw-bold">Proyectos Destacados</h2>
-            <div class="row g-4">
-                
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm custom-card">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Proyecto Frontend</h5>
-                            <p class="card-text">Una aplicación interactiva construida con HTML5, CSS3 moderno y Vanilla JavaScript. Completamente responsiva.</p>
+        <!-- ========================================== -->
+        <!-- SECCIÓN 2: HOBBIES                         -->
+        <!-- ========================================== -->
+        <section id="hobbies" class="py-5 bg-body-secondary">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Hobbies & Intereses</h2>
+                    <p class="text-muted">Lo que me apasiona fuera de la pantalla de código</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Ejemplo Hobby 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="fs-1 text-accent mb-2"><i class="bi bi-controller"></i></div>
+                                <h3 class="h5 card-title fw-bold">Gaming & Retro</h3>
+                                <p class="card-text text-muted small">Apasionado por la historia de los videojuegos, consolas retro y análisis de dinámicas de juego.</p>
+                            </div>
                         </div>
-                        <div class="card-footer bg-transparent border-top-0">
-                            <a href="#" class="btn btn-outline-secondary btn-sm w-100">Ver Repositorio</a>
+                    </div>
+                    <!-- Ejemplo Hobby 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="fs-1 text-accent mb-2"><i class="bi bi-book"></i></div>
+                                <h3 class="h5 card-title fw-bold">Lectura Técnica</h3>
+                                <p class="card-text text-muted small">Investigación constante sobre arquitectura de software, inteligencia artificial y nuevas tendencias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ejemplo Hobby 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="fs-1 text-accent mb-2"><i class="bi bi-camera-reels"></i></div>
+                                <h3 class="h5 card-title fw-bold">Creación de Contenido</h3>
+                                <p class="card-text text-muted small">Edición visual, tutoriales y difusión de conocimiento de programación sin barreras.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ESPACIO FUTURO]: Agrega más hobbies duplicando la estructura de las cards arriba -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 3: HABILIDADES TÉCNICAS            -->
+        <!-- ========================================== -->
+        <section id="habilidades-tecnicas" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Habilidades Técnicas</h2>
+                    <p class="text-muted">Lenguajes, frameworks y herramientas que domino</p>
+                </div>
+                <div class="row g-4">
+                    <!-- HTML5 / CSS3 / JS -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
+                            <div class="card-body">
+                                <i class="bi bi-filetype-html fs-1 text-danger"></i>
+                                <h3 class="h5 fw-bold mt-2">Frontend Core</h3>
+                                <p class="text-muted small">HTML5 Semántico, CSS3 Flexbox/Grid y JavaScript ES6+.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bootstrap -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
+                            <div class="card-body">
+                                <i class="bi bi-bootstrap-fill fs-1 text-accent"></i>
+                                <h3 class="h5 fw-bold mt-2">Bootstrap 5.3</h3>
+                                <p class="text-muted small">Maquetación responsive mobile-first y temas personalizados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Git & GitHub -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
+                            <div class="card-body">
+                                <i class="bi bi-git fs-1 text-danger"></i>
+                                <h3 class="h5 fw-bold mt-2">Git & GitHub</h3>
+                                <p class="text-muted small">Control de versiones, GitHub Pages, Actions y CNAME.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cloud & DevOps -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
+                            <div class="card-body">
+                                <i class="bi bi-cloud-arrow-up-fill fs-1 text-accent"></i>
+                                <h3 class="h5 fw-bold mt-2">DevOps Basic</h3>
+                                <p class="text-muted small">Despliegues continuos, gestión de dominios DNS y CI/CD.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ESPACIO FUTURO]: Agrega más habilidades técnicas aquí -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 4: HABILIDADES BLANDAS             -->
+        <!-- ========================================== -->
+        <section id="habilidades-blandas" class="py-5 bg-body-secondary">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Habilidades Blandas</h2>
+                    <p class="text-muted">Fortalezas interpersonales y metodología de trabajo</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-people-fill fs-2 text-accent"></i>
+                                <h3 class="h5 fw-bold mt-2">Trabajo en Equipo</h3>
+                                <p class="text-muted small">Colaboración fluida y comunicación asertiva en proyectos interdisciplinarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-lightbulb-fill fs-2 text-danger"></i>
+                                <h3 class="h5 fw-bold mt-2">Resolución de Problemas</h3>
+                                <p class="text-muted small">Análisis lógico y pensamiento crítico para depurar errores y optimizar procesos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <i class="bi bi-arrow-repeat fs-2 text-accent"></i>
+                                <h3 class="h5 fw-bold mt-2">Autodidacta</h3>
+                                <p class="text-muted small">Capacidad continua de aprendizaje e integración rápida de nuevas tecnologías.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm custom-card">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">API en Python</h5>
-                            <p class="card-text">Desarrollo de una API RESTful utilizando FastAPI. Incluye autenticación, base de datos y despliegue en la nube.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-top-0">
-                            <a href="#" class="btn btn-outline-secondary btn-sm w-100">Ver Repositorio</a>
-                        </div>
+        <!-- ========================================== -->
+        <!-- SECCIÓN 5: FORMACIÓN                      -->
+        <!-- ========================================== -->
+        <section id="formacion" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Formación & Certificaciones</h2>
+                    <p class="text-muted">Mi camino académico y especializado</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <ul class="list-group list-group-flush shadow-sm rounded-3">
+                            <li class="list-group-item p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                    <h3 class="h5 fw-bold text-accent mb-0">Especialización en Desarrollo Web</h3>
+                                    <span class="badge bg-danger">Completado</span>
+                                </div>
+                                <p class="text-muted small mb-0">Plataformas de Educación Abierta — Enfoque en HTML5, CSS3, JS y Bootstrap 5.</p>
+                            </li>
+                            <li class="list-group-item p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                    <h3 class="h5 fw-bold text-accent mb-0">Azure DevOps & GitHub Workflows</h3>
+                                    <span class="badge bg-danger">Certificado</span>
+                                </div>
+                                <p class="text-muted small mb-0">Evaluación de repositorios, automatización e integración continua.</p>
+                            </li>
+                            <!-- [ESPACIO FUTURO]: Agrega más certificaciones o cursos en este listado -->
+                        </ul>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm custom-card">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Diseño UI/UX</h5>
-                            <p class="card-text">Prototipado en Figma y maquetación fiel utilizando el sistema de grillas y utilidades de Bootstrap 5.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-top-0">
-                            <a href="#" class="btn btn-outline-secondary btn-sm w-100">Ver Repositorio</a>
+        <!-- ========================================== -->
+        <!-- SECCIÓN 6: PROYECTOS                       -->
+        <!-- ========================================== -->
+        <section id="proyectos" class="py-5 bg-body-secondary">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Proyectos Destacados</h2>
+                    <p class="text-muted">Demostraciones reales y plataformas activas</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Proyecto 1: Plataforma Roadmap -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">Web App</span>
+                                <h3 class="h5 card-title fw-bold">AprenderGratis.io</h3>
+                                <p class="card-text text-muted small">Plataforma educativa interactiva inspirada en roadmap.sh para enseñar programación de manera gratuita.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <a href="https://github.com/LeoPrograma369ARG/AprenderGratis.io" target="_blank" class="btn btn-violaceo shadow-red btn-sm w-100">
+                                    <i class="bi bi-github me-1"></i> Ir al Ecosistema
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <!-- Proyecto 2: Blog Gamer Rentable -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">Plataforma</span>
+                                <h3 class="h5 card-title fw-bold">Gamer Rentable</h3>
+                                <p class="card-text text-muted small">Portal de monetización online, microtareas, afiliados y contenido de videojuegos retro.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <a href="#" class="btn btn-violaceo shadow-red btn-sm w-100">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> Ir al Ecosistema
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3: Template Personalizado -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <span class="badge bg-danger mb-2">Open Source</span>
+                                <h3 class="h5 card-title fw-bold">LeoPrograma369 Web</h3>
+                                <p class="card-text text-muted small">Plantilla completa optimizada para SEO, responsive y con soporte nativo para temas claro/oscuro.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <a href="https://github.com/LeoPrograma369ARG" target="_blank" class="btn btn-violaceo shadow-red btn-sm w-100">
+                                    <i class="bi bi-code-square me-1"></i> Ir al Ecosistema
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ESPACIO FUTURO]: Agrega más cards de proyectos según tus lanzamientos -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 2, 8 - SECCIÓN 7: CONTACTO & REDES SOCIALES -->
+        <!-- ========================================== -->
+        <section id="contacto" class="py-5">
+            <div class="container text-center">
+                <div class="mb-5">
+                    <h2 class="fw-bold">Contacto & Redes Sociales</h2>
+                    <p class="text-muted">Conéctate conmigo a través de cualquiera de mis canales oficiales</p>
                 </div>
 
+                <!-- Grilla con TODAS las Redes Sociales Solicitadas -->
+                <div class="row g-3 justify-content-center">
+                    <!-- WhatsApp -->
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <a href="https://wa.me/" target="_blank" class="btn btn-outline-success w-100 p-3 shadow-sm hover-grow">
+                            <i class="bi bi-whatsapp fs-3 d-block mb-1"></i> WhatsApp
+                        </a>
+                    </div>
+                    <!-- Telegram -->
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <a href="https://t.me/" target="_blank" class="btn btn-outline-info w-100 p-3 shadow-sm hover-grow">
+                            <i class="bi bi-telegram fs-3 d-block mb-1"></i> Telegram
+                        </a>
+                    </div>
+                    <!-- YouTube -->
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <a href="https://youtube.com/" target="_blank" class="btn btn-outline-danger w-100 p-3 shadow-sm hover-grow">
+                            <i class="bi bi-youtube fs-3 d-block mb-1"></i> YouTube
+                        </a>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <a href="https://instagram.com/" target="_blank" class="btn btn-outline-primary w-100 p-3 shadow-sm hover-grow">
+                            <i class="bi bi-instagram fs-3 d-block mb-1"></i> Instagram
+                        </a>
+                    </div>
+                    <!-- Facebook -->
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <a href="https://facebook.com/" target="_blank" class="btn btn-outline-primary w-100 p-3 shadow-sm hover-grow">
+                            <i class="bi bi-facebook fs-3 d-block mb-1"></i> Facebook
+                        </a>
+                    </div>
+                    <!-- X / Twitter -->
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <a href="https://x.com/" target="_blank" class="btn btn-outline-dark w-100 p-3 shadow-sm hover-grow">
+                            <i class="bi bi-twitter-x fs-3 d-block mb-1"></i> X (Twitter)
+                        </a>
+                    </div>
+                    <!-- TikTok -->
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <a href="https://tiktok.com/" target="_blank" class="btn btn-outline-dark w-100 p-3 shadow-sm hover-grow">
+                            <i class="bi bi-tiktok fs-3 d-block mb-1"></i> TikTok
+                        </a>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <a href="https://github.com/LeoPrograma369ARG" target="_blank" class="btn btn-outline-secondary w-100 p-3 shadow-sm hover-grow">
+                            <i class="bi bi-github fs-3 d-block mb-1"></i> GitHub
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-4 mt-5">
+    <!-- FOOTER -->
+    <footer class="bg-body-tertiary text-center py-4 border-top">
         <div class="container">
-            <p class="mb-0">© 2026 Mi Portafolio. Creado y alojado con GitHub Pages.</p>
+            <p class="mb-0 text-muted small">
+                © 2026 <strong>Leo Programa 369</strong>. Todos los derechos reservados. Alojad en GitHub Pages.
+            </p>
         </div>
     </footer>
 
+    <!-- Bootstrap 5.3.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Personalizado -->
     <script src="script.js"></script>
 </body>
 </html>
