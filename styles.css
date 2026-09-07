@@ -97,3 +97,54 @@ body {
 [data-bs-theme="light"] .hero-section {
     background: radial-gradient(circle at top, rgba(91, 80, 230, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
 }
+
+/* ==========================================================
+   ESTILOS MEJORADOS: LOGO DEGRADADO Y MENÚ INTERACTIVO
+   ========================================================== */
+
+/* 1. Logotipo más grande con efecto escalado */
+.brand-logo {
+    font-size: 1.8rem !important; /* Aumenta el tamaño general */
+    transition: transform var(--transition-speed) ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.03); /* Crece un 3% al pasar el mouse */
+}
+
+/* 2. Degradado Azul, Rojo y Violeta para el Ícono y el Texto */
+.badge-icon, .brand-text {
+    background: linear-gradient(45deg, #0d6efd, #dc3545, #6610f2); /* Azul, Rojo, Violeta */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.badge-icon {
+    font-size: 2.2rem; /* El ícono es ligeramente más grande que el texto */
+    margin-right: 4px;
+}
+
+/* 3. Forma y Animación para los enlaces del menú (Hover) */
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: 10px; /* Le da forma redondeada de botón al selector */
+    transition: all 0.3s ease; /* Transición suave de colores */
+}
+
+/* Efecto al pasar el puntero (Hover) o al estar activo */
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {
+    background-color: rgba(91, 80, 230, 0.12); /* Fondo sutil violáceo */
+    color: var(--btn-violaceo) !important; /* El texto se vuelve violeta */
+    transform: translateY(-2px); /* Se eleva un poco */
+}
+
+/* Ajuste del color del menú en Modo Oscuro para mayor legibilidad */
+[data-bs-theme="dark"] .navbar-nav .nav-link:hover,
+[data-bs-theme="dark"] .navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #a39cf4 !important; /* Un violeta más claro para fondo oscuro */
+}
