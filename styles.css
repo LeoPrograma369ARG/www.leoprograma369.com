@@ -1,15 +1,10 @@
 /* ==========================================================
-   5, 6 - ESTILOS GENERALES, COLORES Y FUENTES SEO OPTIMIZADAS
+   ESTILOS GENERALES Y FUENTES
    ========================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
 :root {
-    /* Tipografía optimizada */
     --bs-body-font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    
-    /* Colores Personalizados */
-    --btn-violaceo: #5b50e6;        /* Azul Violáceo Principal */
-    --btn-violaceo-hover: #483dc4;  /* Azul Violáceo Oscuro al Hover */
-    --red-shadow: rgba(220, 53, 69, 0.45); /* Sombra Roja para atención */
     --transition-speed: 0.3s;
 }
 
@@ -19,49 +14,120 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.text-accent {
-    color: var(--btn-violaceo) !important;
+/* ==========================================================
+   MODO CLARO (Azul Violeta)
+   ========================================================== */
+[data-bs-theme="light"] {
+    --accent-color: #5b50e6;       /* Azul Violáceo */
+    --accent-hover: #483dc4;
+    --shadow-color: rgba(91, 80, 230, 0.4);
 }
 
-/* ==========================================================
-   BOTONES AZUL VIOLÁCEO Y SOMBREADO ROJO (REQUISITO 5)
-   ========================================================== */
-
-.btn-violaceo {
-    background-color: var(--btn-violaceo);
+[data-bs-theme="light"] .btn-violaceo {
+    background-color: var(--accent-color);
     color: #ffffff;
     border: none;
-    font-weight: 600;
-    transition: all var(--transition-speed) ease;
 }
-
-.btn-violaceo:hover {
-    background-color: var(--btn-violaceo-hover);
+[data-bs-theme="light"] .btn-violaceo:hover {
+    background-color: var(--accent-hover);
     color: #ffffff;
-    transform: translateY(-2px);
+}
+[data-bs-theme="light"] .shadow-red {
+    box-shadow: 0 4px 15px var(--shadow-color) !important;
+}
+[data-bs-theme="light"] .title-color,
+[data-bs-theme="light"] .navbar-nav .menu-link {
+    color: var(--accent-color) !important;
+}
+[data-bs-theme="light"] .navbar-nav .menu-link:hover, 
+[data-bs-theme="light"] .navbar-nav .menu-link.active {
+    background-color: rgba(91, 80, 230, 0.12);
+    color: var(--accent-color) !important;
 }
 
-/* Sombra Roja para Llamar la Atención */
-.shadow-red {
-    box-shadow: 0 4px 15px var(--red-shadow) !important;
-}
-
-.shadow-red:hover {
-    box-shadow: 0 6px 20px rgba(220, 53, 69, 0.7) !important;
-}
 
 /* ==========================================================
-   TARJETAS Y EFECTOS HOVER
+   MODO OSCURO (Rojo y Amarillo)
    ========================================================== */
+[data-bs-theme="dark"] {
+    --dark-primary: #dc3545;       /* Rojo Principal */
+    --dark-secondary: #ffc107;     /* Amarillo de contraste */
+    --shadow-yellow-red: rgba(255, 193, 7, 0.45); /* Sombra Roja/Amarilla */
+}
 
+[data-bs-theme="dark"] .btn-violaceo {
+    background-color: var(--dark-primary);
+    color: #ffffff;
+    border: none;
+}
+[data-bs-theme="dark"] .btn-violaceo:hover {
+    background-color: #bb2d3b;
+    color: #ffffff;
+}
+[data-bs-theme="dark"] .shadow-red {
+    box-shadow: 0 4px 18px var(--shadow-yellow-red) !important;
+}
+[data-bs-theme="dark"] .title-color,
+[data-bs-theme="dark"] .navbar-nav .menu-link {
+    color: var(--dark-secondary) !important; /* Títulos del menú en amarillo para resaltar */
+}
+[data-bs-theme="dark"] .navbar-nav .menu-link:hover, 
+[data-bs-theme="dark"] .navbar-nav .menu-link.active {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: var(--dark-secondary) !important;
+}
+
+
+/* ==========================================================
+   CONFIGURACIÓN DE TIPOGRAFÍA Y LOGO
+   ========================================================== */
+.brand-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem !important;
+    padding-right: 3rem;
+}
+
+.title-color {
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    font-weight: 800;
+}
+
+.navbar-nav .menu-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+
+/* ==========================================================
+   CORRECCIÓN VISIBILIDAD X (TWITTER) Y TIKTOK EN MODO OSCURO
+   ========================================================== */
+[data-bs-theme="dark"] .btn-outline-dark {
+    color: #f8f9fa !important;       /* Texto e ícono blanco brillante */
+    border-color: #ced4da !important;/* Borde claro visible */
+}
+
+[data-bs-theme="dark"] .btn-outline-dark:hover {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;       /* Invierte a oscuro al pasar el cursor */
+    border-color: #f8f9fa !important;
+}
+
+
+/* ==========================================================
+   TARJETAS Y EFECTOS GENERALES
+   ========================================================== */
 .custom-card {
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease, border-color var(--transition-speed) ease;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
     border-radius: 12px;
 }
 
 .custom-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(220, 53, 69, 0.2) !important; /* Sombra roja sutil al pasar cursor */
 }
 
 .hover-grow {
@@ -72,10 +138,6 @@ body {
     transform: scale(1.03);
 }
 
-/* ==========================================================
-   MÁQUINA DE ESCRIBIR (TYPEWRITER)
-   ========================================================== */
-
 #typewriter::after {
     content: '|';
     animation: blink 0.8s infinite;
@@ -84,108 +146,4 @@ body {
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
-}
-
-/* ==========================================================
-   ADAPTACIONES PARA MODO OSCURO / MODO CLARO NATIVO DE BOOTSTRAP
-   ========================================================== */
-
-[data-bs-theme="dark"] .hero-section {
-    background: radial-gradient(circle at top, rgba(91, 80, 230, 0.15) 0%, rgba(33, 37, 41, 1) 100%);
-}
-
-[data-bs-theme="light"] .hero-section {
-    background: radial-gradient(circle at top, rgba(91, 80, 230, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
-}
-
-/* ==========================================================
-   ESTILOS MEJORADOS: LOGO DEGRADADO Y MENÚ INTERACTIVO
-   ========================================================== */
-
-/* 1. Logotipo más grande con efecto escalado */
-.brand-logo {
-    font-size: 1.8rem !important; /* Aumenta el tamaño general */
-    transition: transform var(--transition-speed) ease;
-}
-
-.brand-logo:hover {
-    transform: scale(1.03); /* Crece un 3% al pasar el mouse */
-}
-
-/* 2. Degradado Azul, Rojo y Violeta para el Ícono y el Texto */
-.badge-icon, .brand-text {
-    background: linear-gradient(45deg, #0d6efd, #dc3545, #6610f2); /* Azul, Rojo, Violeta */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
-}
-
-.badge-icon {
-    font-size: 2.2rem; /* El ícono es ligeramente más grande que el texto */
-    margin-right: 4px;
-}
-
-/* 3. Forma y Animación para los enlaces del menú (Hover) */
-.navbar-nav .nav-link {
-    font-weight: 600;
-    font-size: 1.05rem;
-    padding: 0.5rem 1rem !important;
-    border-radius: 10px; /* Le da forma redondeada de botón al selector */
-    transition: all 0.3s ease; /* Transición suave de colores */
-}
-
-/* Efecto al pasar el puntero (Hover) o al estar activo */
-.navbar-nav .nav-link:hover, 
-.navbar-nav .nav-link.active {
-    background-color: rgba(91, 80, 230, 0.12); /* Fondo sutil violáceo */
-    color: var(--btn-violaceo) !important; /* El texto se vuelve violeta */
-    transform: translateY(-2px); /* Se eleva un poco */
-}
-
-/* Ajuste del color del menú en Modo Oscuro para mayor legibilidad */
-[data-bs-theme="dark"] .navbar-nav .nav-link:hover,
-[data-bs-theme="dark"] .navbar-nav .nav-link.active {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #a39cf4 !important; /* Un violeta más claro para fondo oscuro */
-}
-
-/* Importar fuente profesional Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
-
-/* ==========================================
-   1. TÍTULO: Espaciado, fuente y color sólido
-   ========================================== */
-.brand-logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.2rem !important;
-    padding-right: 5rem; /* Abarca más espacio en blanco hacia la derecha */
-}
-
-/* Fuerza el azul violáceo y anula cualquier degradado previo */
-.title-color {
-    background: none !important;
-    -webkit-text-fill-color: initial !important;
-    color: var(--btn-violaceo) !important;
-    font-weight: 800;
-}
-
-/* ==========================================
-   3. MENÚ: Fuente profesional y color violáceo
-   ========================================== */
-.navbar-nav .menu-link {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--btn-violaceo) !important; 
-    transition: all 0.3s ease;
-}
-
-.navbar-nav .menu-link:hover, 
-.navbar-nav .menu-link.active {
-    background-color: rgba(91, 80, 230, 0.12);
-    color: var(--btn-violaceo) !important;
-}
-
-[data-bs-theme="dark"] .navbar-nav .menu-link {
-    color: #a39cf4 !important; /* Tono más claro para que se lea en modo oscuro */
 }
