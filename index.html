@@ -27,12 +27,12 @@
     <!-- 1, 2, 3 - NAVBAR Y MENÚ SUPERIOR ACTUALIZADO -->
     <!-- ========================================== -->
     <header class="sticky-top shadow-sm">
-        <nav class="navbar navbar-expand-xl bg-body-tertiary py-3">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary py-2">
             <div class="container">
-                <!-- 1. Título: Más espacio (me-lg-5), sin degradado, color sólido -->
-                <a class="navbar-brand d-flex align-items-center gap-2 brand-logo me-lg-5" href="#inicio">
-                    <i class="bi bi-code-slash title-color"></i> 
-                    <span class="brand-text title-color">Leo Programa 369</span>
+                <!-- TÍTULO: Recupera su tamaño original y degradado -->
+                <a class="navbar-brand d-flex align-items-center gap-2 brand-logo" href="#inicio">
+                    <i class="bi bi-code-slash badge-icon"></i> 
+                    <span class="brand-text">Leo Programa 369</span>
                 </a>
 
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -40,8 +40,8 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
-                        <!-- 3. Menú: Enlaces con nueva clase 'menu-link' y atributos de idioma -->
+                    <!-- MENÚ: Reducido en márgenes para que entre en una sola línea -->
+                    <ul class="navbar-nav ms-auto align-items-xl-center gap-1">
                         <li class="nav-item"><a class="nav-link menu-link active" href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link menu-link" href="#hobbies" data-es="Hobbies" data-en="Hobbies">Hobbies</a></li>
                         <li class="nav-item"><a class="nav-link menu-link" href="#habilidades-tecnicas" data-es="H. Técnicas" data-en="Tech Skills">H. Técnicas</a></li>
@@ -50,16 +50,16 @@
                         <li class="nav-item"><a class="nav-link menu-link" href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
                         <li class="nav-item"><a class="nav-link menu-link" href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
                         
-                        <li class="nav-item ms-xl-3 mt-3 mt-xl-0">
-                            <button id="theme-toggle" class="btn btn-violaceo shadow-red btn-sm w-100 px-3 py-2">
-                                <i class="bi bi-moon-stars-fill me-1"></i> <span data-es="Modo Oscuro" data-en="Dark Mode">Modo Oscuro</span>
+                        <!-- BOTONES DE MODO Y TRADUCCIÓN: Agrupados y elegantes -->
+                        <li class="nav-item ms-xl-2 mt-3 mt-xl-0 d-flex gap-2 justify-content-center">
+                            <button id="theme-toggle" class="btn btn-theme-dynamic btn-sm px-3 py-2">
+                                <i class="bi bi-moon-stars-fill me-1"></i> <span data-es="Modo" data-en="Mode">Modo</span>
+                            </button>
+                            
+                            <button id="lang-toggle" class="btn btn-theme-dynamic btn-sm px-3 py-2">
+                                <i class="bi bi-globe me-1"></i> <span id="lang-text">EN</span>
                             </button>
                         </li>
-
-                        <!-- Botón de Google Translate en el menú -->
-                       <li class="nav-item ms-xl-2 mt-3 mt-xl-0 d-flex align-items-center">
-                       <div id="google_translate_element" class="btn btn-violaceo shadow-red btn-sm px-2 py-1"></div>
-                     </li>
                     </ul>
                 </div>
             </div>
