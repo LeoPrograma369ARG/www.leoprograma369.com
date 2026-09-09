@@ -15,154 +15,66 @@ body {
 }
 
 /* ==========================================================
-   MODO CLARO (Azul / Violeta)
+   VARIABLES DINÁMICAS: AZUL (Claro) y ROJO (Oscuro)
    ========================================================== */
 [data-bs-theme="light"] {
-    --theme-color: #5b50e6;       /* Azul Violáceo */
-    --theme-hover: #483dc4;
-    --theme-shadow: rgba(91, 80, 230, 0.4);
+    --dynamic-color: #0d6efd; /* Azul fuerte */
+    --dynamic-hover: #0b5ed7; /* Azul más oscuro para el hover */
+    --dynamic-shadow: rgba(13, 110, 253, 0.4);
 }
 
-/* ==========================================================
-   MODO OSCURO (Rojos)
-   ========================================================== */
 [data-bs-theme="dark"] {
-    --theme-color: #dc3545;       /* Rojo */
-    --theme-hover: #bb2d3b;
-    --theme-shadow: rgba(220, 53, 69, 0.45);
+    --dynamic-color: #dc3545; /* Rojo fuerte */
+    --dynamic-hover: #bb2d3b; /* Rojo más oscuro para el hover */
+    --dynamic-shadow: rgba(220, 53, 69, 0.45);
 }
 
 /* ==========================================================
-   BOTONES GENERALES (Cambian dinámicamente)
-   Esto afecta al menú, "Explorar Proyectos", "Contacto", etc.
+   FORZAR COLOR EN TODOS LOS BOTONES DE LA PÁGINA
+   (Afecta al menú, Explorar Proyectos, Ir al Ecosistema, etc)
    ========================================================== */
-.btn-theme-dynamic, .btn-violaceo {
-    background-color: var(--theme-color) !important;
+.btn-primary, .btn-violaceo, .btn-theme-dynamic {
+    background-color: var(--dynamic-color) !important;
+    border-color: var(--dynamic-color) !important;
     color: #ffffff !important;
-    border: none !important;
-    box-shadow: 0 4px 15px var(--theme-shadow) !important;
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--dynamic-shadow) !important;
 }
 
-.btn-theme-dynamic:hover, .btn-violaceo:hover {
-    background-color: var(--theme-hover) !important;
+.btn-primary:hover, .btn-violaceo:hover, .btn-theme-dynamic:hover {
+    background-color: var(--dynamic-hover) !important;
+    border-color: var(--dynamic-hover) !important;
     transform: translateY(-2px);
 }
 
 /* ==========================================================
-   MENÚ INTERACTIVO (Cambia con el modo)
+   MENÚ SUPERIOR: MÁS CHICO Y CON COLOR DINÁMICO
    ========================================================== */
 .navbar-nav .menu-link {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 0.95rem; /* Tamaño optimizado para que no se parta el menú */
-    padding: 0.5rem 0.7rem !important; 
-    border-radius: 8px;
-    color: var(--bs-body-color) !important; /* Toma el color del texto nativo según el modo */
-    transition: all 0.3s ease;
+    font-size: 0.8rem !important; /* ACHICADO para que entre en una línea */
+    padding: 0.4rem 0.5rem !important; /* Menos espacio entre palabras */
+    color: var(--dynamic-color) !important; /* AZUL en claro, ROJO en oscuro */
+    border-radius: 6px;
+    white-space: nowrap; /* Evita que las palabras se partan en dos líneas */
 }
 
-/* Hover y Activo toman el color dinámico (Azul o Rojo) */
 .navbar-nav .menu-link:hover, 
 .navbar-nav .menu-link.active {
-    background-color: rgba(128, 128, 128, 0.1); /* Fondo muy sutil neutro */
-    color: var(--theme-color) !important; /* Azul en claro, Rojo en oscuro */
+    background-color: rgba(128, 128, 128, 0.15) !important;
+    color: var(--dynamic-color) !important;
 }
 
 /* ==========================================================
-   TÍTULO: RECUPERA TAMAÑO Y DEGRADADO VARIOS COLORES
-   ========================================================== */
-.brand-logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem !important; /* Tamaño normal, no abarca toda la pantalla */
-    transition: transform 0.3s ease;
-    padding-right: 0 !important; /* Eliminamos el espacio blanco que rompía todo */
-}
-
-.brand-logo:hover {
-    transform: scale(1.03);
-}
-
-/* Recupera los "varios colores" (Azul, Rojo y Violeta) */
-.badge-icon, .brand-text {
-    background: linear-gradient(45deg, #0d6efd, #dc3545, #6610f2) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    font-weight: 800;
-}
-
-.badge-icon {
-    font-size: 1.9rem;
-    margin-right: 4px;
-}
-
-
-/* ==========================================================
-   CONFIGURACIÓN DE TIPOGRAFÍA Y LOGO
-   ========================================================== */
-.brand-logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.2rem !important;
-    padding-right: 3rem;
-}
-
-.title-color {
-    background: none !important;
-    -webkit-text-fill-color: initial !important;
-    font-weight: 800;
-}
-
-.navbar-nav .menu-link {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.05rem;
-    padding: 0.5rem 1rem !important;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-
-/* ==========================================================
-   CORRECCIÓN VISIBILIDAD X (TWITTER) Y TIKTOK EN MODO OSCURO
+   SOLUCIÓN INFALIBLE: VISIBILIDAD DE X Y TIKTOK EN MODO OSCURO
    ========================================================== */
 [data-bs-theme="dark"] .btn-outline-dark {
-    color: #f8f9fa !important;       /* Texto e ícono blanco brillante */
-    border-color: #ced4da !important;/* Borde claro visible */
+    color: #ffffff !important; /* Forzamos texto/icono blanco */
+    border-color: rgba(255, 255, 255, 0.5) !important; /* Borde blanco semi-transparente */
+    background-color: transparent !important;
 }
 
 [data-bs-theme="dark"] .btn-outline-dark:hover {
-    background-color: #f8f9fa !important;
-    color: #212529 !important;       /* Invierte a oscuro al pasar el cursor */
-    border-color: #f8f9fa !important;
-}
-
-
-/* ==========================================================
-   TARJETAS Y EFECTOS GENERALES
-   ========================================================== */
-.custom-card {
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-    border-radius: 12px;
-}
-
-.custom-card:hover {
-    transform: translateY(-5px);
-}
-
-.hover-grow {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hover-grow:hover {
-    transform: scale(1.03);
-}
-
-#typewriter::after {
-    content: '|';
-    animation: blink 0.8s infinite;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    background-color: #ffffff !important;
+    color: #000000 !important; /* Icono negro al pasar el mouse */
 }
