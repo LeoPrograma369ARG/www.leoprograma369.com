@@ -15,66 +15,85 @@ body {
 }
 
 /* ==========================================================
-   MODO CLARO (Azul Violeta)
+   MODO CLARO (Azul / Violeta)
    ========================================================== */
 [data-bs-theme="light"] {
-    --accent-color: #5b50e6;       /* Azul Violáceo */
-    --accent-hover: #483dc4;
-    --shadow-color: rgba(91, 80, 230, 0.4);
+    --theme-color: #5b50e6;       /* Azul Violáceo */
+    --theme-hover: #483dc4;
+    --theme-shadow: rgba(91, 80, 230, 0.4);
 }
-
-[data-bs-theme="light"] .btn-violaceo {
-    background-color: var(--accent-color);
-    color: #ffffff;
-    border: none;
-}
-[data-bs-theme="light"] .btn-violaceo:hover {
-    background-color: var(--accent-hover);
-    color: #ffffff;
-}
-[data-bs-theme="light"] .shadow-red {
-    box-shadow: 0 4px 15px var(--shadow-color) !important;
-}
-[data-bs-theme="light"] .title-color,
-[data-bs-theme="light"] .navbar-nav .menu-link {
-    color: var(--accent-color) !important;
-}
-[data-bs-theme="light"] .navbar-nav .menu-link:hover, 
-[data-bs-theme="light"] .navbar-nav .menu-link.active {
-    background-color: rgba(91, 80, 230, 0.12);
-    color: var(--accent-color) !important;
-}
-
 
 /* ==========================================================
-   MODO OSCURO (Rojo y Amarillo)
+   MODO OSCURO (Rojos)
    ========================================================== */
 [data-bs-theme="dark"] {
-    --dark-primary: #dc3545;       /* Rojo Principal */
-    --dark-secondary: #ffc107;     /* Amarillo de contraste */
-    --shadow-yellow-red: rgba(255, 193, 7, 0.45); /* Sombra Roja/Amarilla */
+    --theme-color: #dc3545;       /* Rojo */
+    --theme-hover: #bb2d3b;
+    --theme-shadow: rgba(220, 53, 69, 0.45);
 }
 
-[data-bs-theme="dark"] .btn-violaceo {
-    background-color: var(--dark-primary);
-    color: #ffffff;
-    border: none;
+/* ==========================================================
+   BOTONES GENERALES (Cambian dinámicamente)
+   Esto afecta al menú, "Explorar Proyectos", "Contacto", etc.
+   ========================================================== */
+.btn-theme-dynamic, .btn-violaceo {
+    background-color: var(--theme-color) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 4px 15px var(--theme-shadow) !important;
+    transition: all 0.3s ease;
 }
-[data-bs-theme="dark"] .btn-violaceo:hover {
-    background-color: #bb2d3b;
-    color: #ffffff;
+
+.btn-theme-dynamic:hover, .btn-violaceo:hover {
+    background-color: var(--theme-hover) !important;
+    transform: translateY(-2px);
 }
-[data-bs-theme="dark"] .shadow-red {
-    box-shadow: 0 4px 18px var(--shadow-yellow-red) !important;
+
+/* ==========================================================
+   MENÚ INTERACTIVO (Cambia con el modo)
+   ========================================================== */
+.navbar-nav .menu-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem; /* Tamaño optimizado para que no se parta el menú */
+    padding: 0.5rem 0.7rem !important; 
+    border-radius: 8px;
+    color: var(--bs-body-color) !important; /* Toma el color del texto nativo según el modo */
+    transition: all 0.3s ease;
 }
-[data-bs-theme="dark"] .title-color,
-[data-bs-theme="dark"] .navbar-nav .menu-link {
-    color: var(--dark-secondary) !important; /* Títulos del menú en amarillo para resaltar */
+
+/* Hover y Activo toman el color dinámico (Azul o Rojo) */
+.navbar-nav .menu-link:hover, 
+.navbar-nav .menu-link.active {
+    background-color: rgba(128, 128, 128, 0.1); /* Fondo muy sutil neutro */
+    color: var(--theme-color) !important; /* Azul en claro, Rojo en oscuro */
 }
-[data-bs-theme="dark"] .navbar-nav .menu-link:hover, 
-[data-bs-theme="dark"] .navbar-nav .menu-link.active {
-    background-color: rgba(220, 53, 69, 0.2);
-    color: var(--dark-secondary) !important;
+
+/* ==========================================================
+   TÍTULO: RECUPERA TAMAÑO Y DEGRADADO VARIOS COLORES
+   ========================================================== */
+.brand-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem !important; /* Tamaño normal, no abarca toda la pantalla */
+    transition: transform 0.3s ease;
+    padding-right: 0 !important; /* Eliminamos el espacio blanco que rompía todo */
+}
+
+.brand-logo:hover {
+    transform: scale(1.03);
+}
+
+/* Recupera los "varios colores" (Azul, Rojo y Violeta) */
+.badge-icon, .brand-text {
+    background: linear-gradient(45deg, #0d6efd, #dc3545, #6610f2) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: 800;
+}
+
+.badge-icon {
+    font-size: 1.9rem;
+    margin-right: 4px;
 }
 
 
