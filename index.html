@@ -23,8 +23,8 @@
 </head>
 <body>
 
-   <!-- ========================================== -->
-    <!-- 1, 2, 3 - NAVBAR Y MENÚ SUPERIOR ACTUALIZADO -->
+    <!-- ========================================== -->
+    <!-- NAVBAR Y MENÚ SUPERIOR ACTUALIZADO -->
     <!-- ========================================== -->
     <header class="sticky-top shadow-sm">
         <nav class="navbar navbar-expand-xl bg-body-tertiary py-2">
@@ -72,19 +72,20 @@
         <!-- ========================================== -->
         <section id="inicio" class="hero-section text-center d-flex align-items-center py-5">
             <div class="container py-4">
+                <!-- Se protege el span anidado traduciendo solo el primer fragmento -->
                 <h1 class="display-3 fw-extrabold mb-3">
-                    Hola, soy <span class="text-accent">Leo Programa 369</span>
+                    <span data-es="Hola, soy" data-en="Hi, I am">Hola, soy</span> <span class="text-accent">Leo Programa 369</span>
                 </h1>
                 <h2 class="h3 text-muted mb-4">
-                    Especialista en <span id="typewriter" class="text-danger fw-bold"></span>
+                    <span data-es="Especialista en" data-en="Specialist in">Especialista en</span> <span id="typewriter" class="text-danger fw-bold"></span>
                 </h2>
-                <p class="lead text-muted mx-auto mb-5" style="max-width: 650px;">
+                <p class="lead text-muted mx-auto mb-5" style="max-width: 650px;" data-es="Bienvenido a mi ecosistema web. Aquí podrás explorar mi trayectoria, habilidades en desarrollo de software, proyectos y canales de aprendizaje." data-en="Welcome to my web ecosystem. Here you can explore my background, software development skills, projects, and learning channels.">
                     Bienvenido a mi ecosistema web. Aquí podrás explorar mi trayectoria, habilidades en desarrollo de software, proyectos y canales de aprendizaje.
                 </p>
                 <!-- Botones de Navegación Rápida -->
                 <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="#proyectos" class="btn btn-violaceo btn-lg shadow-red">Explorar Proyectos</a>
-                    <a href="#contacto" class="btn btn-outline-danger btn-lg">Contacto Directo</a>
+                    <a href="#proyectos" class="btn btn-violaceo btn-lg shadow-red" data-es="Explorar Proyectos" data-en="Explore Projects">Explorar Proyectos</a>
+                    <a href="#contacto" class="btn btn-outline-danger btn-lg" data-es="Contacto Directo" data-en="Direct Contact">Contacto Directo</a>
                 </div>
             </div>
         </section>
@@ -95,41 +96,37 @@
         <section id="hobbies" class="py-5 bg-body-secondary">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bold">Hobbies & Intereses</h2>
-                    <p class="text-muted">Lo que me apasiona fuera de la pantalla de código</p>
+                    <h2 class="fw-bold" data-es="Hobbies & Intereses" data-en="Hobbies & Interests">Hobbies & Intereses</h2>
+                    <p class="text-muted" data-es="Lo que me apasiona fuera de la pantalla de código" data-en="What I am passionate about outside the code screen">Lo que me apasiona fuera de la pantalla de código</p>
                 </div>
                 <div class="row g-4">
-                    <!-- Ejemplo Hobby 1 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="fs-1 text-accent mb-2"><i class="bi bi-controller"></i></div>
-                                <h3 class="h5 card-title fw-bold">Gaming & Retro</h3>
-                                <p class="card-text text-muted small">Apasionado por la historia de los videojuegos, consolas retro y análisis de dinámicas de juego.</p>
+                                <h3 class="h5 card-title fw-bold" data-es="Gaming & Retro" data-en="Gaming & Retro">Gaming & Retro</h3>
+                                <p class="card-text text-muted small" data-es="Apasionado por la historia de los videojuegos, consolas retro y análisis de dinámicas de juego." data-en="Passionate about the history of video games, retro consoles, and gameplay dynamics analysis.">Apasionado por la historia de los videojuegos, consolas retro y análisis de dinámicas de juego.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Ejemplo Hobby 2 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="fs-1 text-accent mb-2"><i class="bi bi-book"></i></div>
-                                <h3 class="h5 card-title fw-bold">Lectura Técnica</h3>
-                                <p class="card-text text-muted small">Investigación constante sobre arquitectura de software, inteligencia artificial y nuevas tendencias.</p>
+                                <h3 class="h5 card-title fw-bold" data-es="Lectura Técnica" data-en="Technical Reading">Lectura Técnica</h3>
+                                <p class="card-text text-muted small" data-es="Investigación constante sobre arquitectura de software, inteligencia artificial y nuevas tendencias." data-en="Constant research on software architecture, artificial intelligence, and new trends.">Investigación constante sobre arquitectura de software, inteligencia artificial y nuevas tendencias.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Ejemplo Hobby 3 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="fs-1 text-accent mb-2"><i class="bi bi-camera-reels"></i></div>
-                                <h3 class="h5 card-title fw-bold">Creación de Contenido</h3>
-                                <p class="card-text text-muted small">Edición visual, tutoriales y difusión de conocimiento de programación sin barreras.</p>
+                                <h3 class="h5 card-title fw-bold" data-es="Creación de Contenido" data-en="Content Creation">Creación de Contenido</h3>
+                                <p class="card-text text-muted small" data-es="Edición visual, tutoriales y difusión de conocimiento de programación sin barreras." data-en="Visual editing, tutorials, and diffusion of programming knowledge without barriers.">Edición visual, tutoriales y difusión de conocimiento de programación sin barreras.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- [ESPACIO FUTURO]: Agrega más hobbies duplicando la estructura de las cards arriba -->
                 </div>
             </div>
         </section>
@@ -140,51 +137,46 @@
         <section id="habilidades-tecnicas" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bold">Habilidades Técnicas</h2>
-                    <p class="text-muted">Lenguajes, frameworks y herramientas que domino</p>
+                    <h2 class="fw-bold" data-es="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</h2>
+                    <p class="text-muted" data-es="Lenguajes, frameworks y herramientas que domino" data-en="Languages, frameworks, and tools I master">Lenguajes, frameworks y herramientas que domino</p>
                 </div>
                 <div class="row g-4">
-                    <!-- HTML5 / CSS3 / JS -->
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
                             <div class="card-body">
                                 <i class="bi bi-filetype-html fs-1 text-danger"></i>
-                                <h3 class="h5 fw-bold mt-2">Frontend Core</h3>
-                                <p class="text-muted small">HTML5 Semántico, CSS3 Flexbox/Grid y JavaScript ES6+.</p>
+                                <h3 class="h5 fw-bold mt-2" data-es="Frontend Core" data-en="Frontend Core">Frontend Core</h3>
+                                <p class="text-muted small" data-es="HTML5 Semántico, CSS3 Flexbox/Grid y JavaScript ES6+." data-en="Semantic HTML5, CSS3 Flexbox/Grid and JavaScript ES6+.">HTML5 Semántico, CSS3 Flexbox/Grid y JavaScript ES6+.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Bootstrap -->
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
                             <div class="card-body">
                                 <i class="bi bi-bootstrap-fill fs-1 text-accent"></i>
-                                <h3 class="h5 fw-bold mt-2">Bootstrap 5.3</h3>
-                                <p class="text-muted small">Maquetación responsive mobile-first y temas personalizados.</p>
+                                <h3 class="h5 fw-bold mt-2" data-es="Bootstrap 5.3" data-en="Bootstrap 5.3">Bootstrap 5.3</h3>
+                                <p class="text-muted small" data-es="Maquetación responsive mobile-first y temas personalizados." data-en="Responsive mobile-first layout and custom themes.">Maquetación responsive mobile-first y temas personalizados.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Git & GitHub -->
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
                             <div class="card-body">
                                 <i class="bi bi-git fs-1 text-danger"></i>
-                                <h3 class="h5 fw-bold mt-2">Git & GitHub</h3>
-                                <p class="text-muted small">Control de versiones, GitHub Pages, Actions y CNAME.</p>
+                                <h3 class="h5 fw-bold mt-2" data-es="Git & GitHub" data-en="Git & GitHub">Git & GitHub</h3>
+                                <p class="text-muted small" data-es="Control de versiones, GitHub Pages, Actions y CNAME." data-en="Version control, GitHub Pages, Actions, and CNAME.">Control de versiones, GitHub Pages, Actions y CNAME.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Cloud & DevOps -->
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
                             <div class="card-body">
                                 <i class="bi bi-cloud-arrow-up-fill fs-1 text-accent"></i>
-                                <h3 class="h5 fw-bold mt-2">DevOps Basic</h3>
-                                <p class="text-muted small">Despliegues continuos, gestión de dominios DNS y CI/CD.</p>
+                                <h3 class="h5 fw-bold mt-2" data-es="DevOps Basic" data-en="DevOps Basic">DevOps Basic</h3>
+                                <p class="text-muted small" data-es="Despliegues continuos, gestión de dominios DNS y CI/CD." data-en="Continuous deployment, DNS domain management, and CI/CD.">Despliegues continuos, gestión de dominios DNS y CI/CD.</p>
                             </div>
                         </div>
                     </div>
-                    <!-- [ESPACIO FUTURO]: Agrega más habilidades técnicas aquí -->
                 </div>
             </div>
         </section>
@@ -195,16 +187,16 @@
         <section id="habilidades-blandas" class="py-5 bg-body-secondary">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bold">Habilidades Blandas</h2>
-                    <p class="text-muted">Fortalezas interpersonales y metodología de trabajo</p>
+                    <h2 class="fw-bold" data-es="Habilidades Blandas" data-en="Soft Skills">Habilidades Blandas</h2>
+                    <p class="text-muted" data-es="Fortalezas interpersonales y metodología de trabajo" data-en="Interpersonal strengths and work methodology">Fortalezas interpersonales y metodología de trabajo</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-4">
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm">
                             <div class="card-body">
                                 <i class="bi bi-people-fill fs-2 text-accent"></i>
-                                <h3 class="h5 fw-bold mt-2">Trabajo en Equipo</h3>
-                                <p class="text-muted small">Colaboración fluida y comunicación asertiva en proyectos interdisciplinarios.</p>
+                                <h3 class="h5 fw-bold mt-2" data-es="Trabajo en Equipo" data-en="Teamwork">Trabajo en Equipo</h3>
+                                <p class="text-muted small" data-es="Colaboración fluida y comunicación asertiva en proyectos interdisciplinarios." data-en="Fluid collaboration and assertive communication in interdisciplinary projects.">Colaboración fluida y comunicación asertiva en proyectos interdisciplinarios.</p>
                             </div>
                         </div>
                     </div>
@@ -212,8 +204,8 @@
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm">
                             <div class="card-body">
                                 <i class="bi bi-lightbulb-fill fs-2 text-danger"></i>
-                                <h3 class="h5 fw-bold mt-2">Resolución de Problemas</h3>
-                                <p class="text-muted small">Análisis lógico y pensamiento crítico para depurar errores y optimizar procesos.</p>
+                                <h3 class="h5 fw-bold mt-2" data-es="Resolución de Problemas" data-en="Problem Solving">Resolución de Problemas</h3>
+                                <p class="text-muted small" data-es="Análisis lógico y pensamiento crítico para depurar errores y optimizar procesos." data-en="Logical analysis and critical thinking to debug errors and optimize processes.">Análisis lógico y pensamiento crítico para depurar errores y optimizar procesos.</p>
                             </div>
                         </div>
                     </div>
@@ -221,8 +213,8 @@
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm">
                             <div class="card-body">
                                 <i class="bi bi-arrow-repeat fs-2 text-accent"></i>
-                                <h3 class="h5 fw-bold mt-2">Autodidacta</h3>
-                                <p class="text-muted small">Capacidad continua de aprendizaje e integración rápida de nuevas tecnologías.</p>
+                                <h3 class="h5 fw-bold mt-2" data-es="Autodidacta" data-en="Self-taught">Autodidacta</h3>
+                                <p class="text-muted small" data-es="Capacidad continua de aprendizaje e integración rápida de nuevas tecnologías." data-en="Continuous learning capacity and rapid integration of new technologies.">Capacidad continua de aprendizaje e integración rápida de nuevas tecnologías.</p>
                             </div>
                         </div>
                     </div>
@@ -236,27 +228,26 @@
         <section id="formacion" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bold">Formación & Certificaciones</h2>
-                    <p class="text-muted">Mi camino académico y especializado</p>
+                    <h2 class="fw-bold" data-es="Formación & Certificaciones" data-en="Education & Certifications">Formación & Certificaciones</h2>
+                    <p class="text-muted" data-es="Mi camino académico y especializado" data-en="My academic and specialized path">Mi camino académico y especializado</p>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-8">
                         <ul class="list-group list-group-flush shadow-sm rounded-3">
                             <li class="list-group-item p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-1">
-                                    <h3 class="h5 fw-bold text-accent mb-0">Especialización en Desarrollo Web</h3>
-                                    <span class="badge bg-danger">Completado</span>
+                                    <h3 class="h5 fw-bold text-accent mb-0" data-es="Especialización en Desarrollo Web" data-en="Web Development Specialization">Especialización en Desarrollo Web</h3>
+                                    <span class="badge bg-danger" data-es="Completado" data-en="Completed">Completado</span>
                                 </div>
-                                <p class="text-muted small mb-0">Plataformas de Educación Abierta — Enfoque en HTML5, CSS3, JS y Bootstrap 5.</p>
+                                <p class="text-muted small mb-0" data-es="Plataformas de Educación Abierta — Enfoque en HTML5, CSS3, JS y Bootstrap 5." data-en="Open Education Platforms — Focus on HTML5, CSS3, JS and Bootstrap 5.">Plataformas de Educación Abierta — Enfoque en HTML5, CSS3, JS y Bootstrap 5.</p>
                             </li>
                             <li class="list-group-item p-4">
                                 <div class="d-flex justify-content-between align-items-center mb-1">
-                                    <h3 class="h5 fw-bold text-accent mb-0">Azure DevOps & GitHub Workflows</h3>
-                                    <span class="badge bg-danger">Certificado</span>
+                                    <h3 class="h5 fw-bold text-accent mb-0" data-es="Azure DevOps & GitHub Workflows" data-en="Azure DevOps & GitHub Workflows">Azure DevOps & GitHub Workflows</h3>
+                                    <span class="badge bg-danger" data-es="Certificado" data-en="Certified">Certificado</span>
                                 </div>
-                                <p class="text-muted small mb-0">Evaluación de repositorios, automatización e integración continua.</p>
+                                <p class="text-muted small mb-0" data-es="Evaluación de repositorios, automatización e integración continua." data-en="Repository evaluation, automation and continuous integration.">Evaluación de repositorios, automatización e integración continua.</p>
                             </li>
-                            <!-- [ESPACIO FUTURO]: Agrega más certificaciones o cursos en este listado -->
                         </ul>
                     </div>
                 </div>
@@ -269,118 +260,108 @@
         <section id="proyectos" class="py-5 bg-body-secondary">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bold">Proyectos Destacados</h2>
-                    <p class="text-muted">Demostraciones reales y plataformas activas</p>
+                    <h2 class="fw-bold" data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
+                    <p class="text-muted" data-es="Demostraciones reales y plataformas activas" data-en="Real demonstrations and active platforms">Demostraciones reales y plataformas activas</p>
                 </div>
                 <div class="row g-4">
-                    <!-- Proyecto 1: Plataforma Roadmap -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 custom-card border-0 shadow-sm p-3">
                             <div class="card-body">
-                                <span class="badge bg-primary mb-2">Web App</span>
-                                <h3 class="h5 card-title fw-bold">AprenderGratis.io</h3>
-                                <p class="card-text text-muted small">Plataforma educativa interactiva inspirada en roadmap.sh para enseñar programación de manera gratuita.</p>
+                                <span class="badge bg-primary mb-2" data-es="Web App" data-en="Web App">Web App</span>
+                                <h3 class="h5 card-title fw-bold" data-es="AprenderGratis.io" data-en="AprenderGratis.io">AprenderGratis.io</h3>
+                                <p class="card-text text-muted small" data-es="Plataforma educativa interactiva inspirada en roadmap.sh para enseñar programación de manera gratuita." data-en="Interactive educational platform inspired by roadmap.sh to teach programming for free.">Plataforma educativa interactiva inspirada en roadmap.sh para enseñar programación de manera gratuita.</p>
                             </div>
                             <div class="card-footer bg-transparent border-top-0">
                                 <a href="https://github.com/LeoPrograma369ARG/AprenderGratis.io" target="_blank" class="btn btn-violaceo shadow-red btn-sm w-100">
-                                    <i class="bi bi-github me-1"></i> Ir al Ecosistema
+                                    <!-- CUIDADO: El span protege al icono del script -->
+                                    <i class="bi bi-github me-1"></i> <span data-es="Ir al Ecosistema" data-en="Go to Ecosystem">Ir al Ecosistema</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <!-- Proyecto 2: Blog Gamer Rentable -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 custom-card border-0 shadow-sm p-3">
                             <div class="card-body">
-                                <span class="badge bg-success mb-2">Plataforma</span>
-                                <h3 class="h5 card-title fw-bold">Gamer Rentable</h3>
-                                <p class="card-text text-muted small">Portal de monetización online, microtareas, afiliados y contenido de videojuegos retro.</p>
+                                <span class="badge bg-success mb-2" data-es="Plataforma" data-en="Platform">Plataforma</span>
+                                <h3 class="h5 card-title fw-bold" data-es="Gamer Rentable" data-en="Gamer Rentable">Gamer Rentable</h3>
+                                <p class="card-text text-muted small" data-es="Portal de monetización online, microtareas, afiliados y contenido de videojuegos retro." data-en="Online monetization portal, microtasks, affiliates and retro video game content.">Portal de monetización online, microtareas, afiliados y contenido de videojuegos retro.</p>
                             </div>
                             <div class="card-footer bg-transparent border-top-0">
                                 <a href="#" class="btn btn-violaceo shadow-red btn-sm w-100">
-                                    <i class="bi bi-box-arrow-up-right me-1"></i> Ir al Ecosistema
+                                    <!-- CUIDADO: El span protege al icono del script -->
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> <span data-es="Ir al Ecosistema" data-en="Go to Ecosystem">Ir al Ecosistema</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <!-- Proyecto 3: Template Personalizado -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 custom-card border-0 shadow-sm p-3">
                             <div class="card-body">
-                                <span class="badge bg-danger mb-2">Open Source</span>
-                                <h3 class="h5 card-title fw-bold">LeoPrograma369 Web</h3>
-                                <p class="card-text text-muted small">Plantilla completa optimizada para SEO, responsive y con soporte nativo para temas claro/oscuro.</p>
+                                <span class="badge bg-danger mb-2" data-es="Open Source" data-en="Open Source">Open Source</span>
+                                <h3 class="h5 card-title fw-bold" data-es="LeoPrograma369 Web" data-en="LeoPrograma369 Web">LeoPrograma369 Web</h3>
+                                <p class="card-text text-muted small" data-es="Plantilla completa optimizada para SEO, responsive y con soporte nativo para temas claro/oscuro." data-en="Complete template optimized for SEO, responsive and with native support for light/dark themes.">Plantilla completa optimizada para SEO, responsive y con soporte nativo para temas claro/oscuro.</p>
                             </div>
                             <div class="card-footer bg-transparent border-top-0">
                                 <a href="https://github.com/LeoPrograma369ARG" target="_blank" class="btn btn-violaceo shadow-red btn-sm w-100">
-                                    <i class="bi bi-code-square me-1"></i> Ir al Ecosistema
+                                    <!-- CUIDADO: El span protege al icono del script -->
+                                    <i class="bi bi-code-square me-1"></i> <span data-es="Ir al Ecosistema" data-en="Go to Ecosystem">Ir al Ecosistema</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <!-- [ESPACIO FUTURO]: Agrega más cards de proyectos según tus lanzamientos -->
                 </div>
             </div>
         </section>
 
         <!-- ========================================== -->
-        <!-- 2, 8 - SECCIÓN 7: CONTACTO & REDES SOCIALES -->
+        <!-- SECCIÓN 7: CONTACTO & REDES SOCIALES       -->
         <!-- ========================================== -->
         <section id="contacto" class="py-5">
             <div class="container text-center">
                 <div class="mb-5">
-                    <h2 class="fw-bold">Contacto & Redes Sociales</h2>
-                    <p class="text-muted">Conéctate conmigo a través de cualquiera de mis canales oficiales</p>
+                    <h2 class="fw-bold" data-es="Contacto & Redes Sociales" data-en="Contact & Social Networks">Contacto & Redes Sociales</h2>
+                    <p class="text-muted" data-es="Conéctate conmigo a través de cualquiera de mis canales oficiales" data-en="Connect with me through any of my official channels">Conéctate conmigo a través de cualquiera de mis canales oficiales</p>
                 </div>
 
-                <!-- Grilla con TODAS las Redes Sociales Solicitadas -->
                 <div class="row g-3 justify-content-center">
-                    <!-- WhatsApp -->
                     <div class="col-6 col-sm-4 col-md-3">
                         <a href="https://wa.me/" target="_blank" class="btn btn-outline-success w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-whatsapp fs-3 d-block mb-1"></i> WhatsApp
+                            <i class="bi bi-whatsapp fs-3 d-block mb-1"></i> <span>WhatsApp</span>
                         </a>
                     </div>
-                    <!-- Telegram -->
                     <div class="col-6 col-sm-4 col-md-3">
                         <a href="https://t.me/" target="_blank" class="btn btn-outline-info w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-telegram fs-3 d-block mb-1"></i> Telegram
+                            <i class="bi bi-telegram fs-3 d-block mb-1"></i> <span>Telegram</span>
                         </a>
                     </div>
-                    <!-- YouTube -->
                     <div class="col-6 col-sm-4 col-md-3">
                         <a href="https://youtube.com/" target="_blank" class="btn btn-outline-danger w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-youtube fs-3 d-block mb-1"></i> YouTube
+                            <i class="bi bi-youtube fs-3 d-block mb-1"></i> <span>YouTube</span>
                         </a>
                     </div>
-                    <!-- Instagram -->
                     <div class="col-6 col-sm-4 col-md-3">
                         <a href="https://instagram.com/" target="_blank" class="btn btn-outline-primary w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-instagram fs-3 d-block mb-1"></i> Instagram
+                            <i class="bi bi-instagram fs-3 d-block mb-1"></i> <span>Instagram</span>
                         </a>
                     </div>
-                    <!-- Facebook -->
                     <div class="col-6 col-sm-4 col-md-3">
                         <a href="https://facebook.com/" target="_blank" class="btn btn-outline-primary w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-facebook fs-3 d-block mb-1"></i> Facebook
+                            <i class="bi bi-facebook fs-3 d-block mb-1"></i> <span>Facebook</span>
                         </a>
                     </div>
-                    <!-- X / Twitter -->
                     <div class="col-6 col-sm-4 col-md-3">
                         <a href="https://x.com/" target="_blank" class="btn btn-outline-dark w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-twitter-x fs-3 d-block mb-1"></i> X (Twitter)
+                            <i class="bi bi-twitter-x fs-3 d-block mb-1"></i> <span>X (Twitter)</span>
                         </a>
                     </div>
-                    <!-- TikTok -->
                     <div class="col-6 col-sm-4 col-md-3">
                         <a href="https://tiktok.com/" target="_blank" class="btn btn-outline-dark w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-tiktok fs-3 d-block mb-1"></i> TikTok
+                            <i class="bi bi-tiktok fs-3 d-block mb-1"></i> <span>TikTok</span>
                         </a>
                     </div>
-                    <!-- GitHub -->
                     <div class="col-6 col-sm-4 col-md-3">
                         <a href="https://github.com/LeoPrograma369ARG" target="_blank" class="btn btn-outline-secondary w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-github fs-3 d-block mb-1"></i> GitHub
+                            <i class="bi bi-github fs-3 d-block mb-1"></i> <span>GitHub</span>
                         </a>
                     </div>
                 </div>
@@ -392,7 +373,7 @@
     <footer class="bg-body-tertiary text-center py-4 border-top">
         <div class="container">
             <p class="mb-0 text-muted small">
-                © 2026 <strong>Leo Programa 369</strong>. Todos los derechos reservados. Alojad en GitHub Pages.
+                © 2026 <strong>Leo Programa 369</strong>. <span data-es="Todos los derechos reservados. Alojado en GitHub Pages." data-en="All rights reserved. Hosted on GitHub Pages.">Todos los derechos reservados. Alojado en GitHub Pages.</span>
             </p>
         </div>
     </footer>
@@ -402,17 +383,5 @@
     <!-- Script Personalizado -->
     <script src="script.js"></script>
 
-<!-- Script de Google Translate -->
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-      pageLanguage: 'es', 
-      includedLanguages: 'en,es', // Solo muestra Inglés y Español
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
-</script>
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
 </body>
 </html>
