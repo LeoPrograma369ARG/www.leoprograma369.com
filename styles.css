@@ -137,3 +137,62 @@ span.brand-text {
         margin-right: 0.5rem;
     }
 }
+
+/* ==========================================================
+   MARCA / TÍTULO DEL NAVBAR
+   Más ancho · Unbounded · Azul (claro) / Rojo (oscuro)
+   ========================================================== */
+
+.navbar .navbar-brand.brand-logo {
+    flex: 1 1 auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-right: 0.75rem !important;
+    gap: 0.7rem !important;
+    padding-top: 0.15rem !important;
+    padding-bottom: 0.15rem !important;
+}
+
+.navbar .navbar-brand.brand-logo .badge-icon {
+    font-size: clamp(1.4rem, 1.1rem + 1vw, 1.75rem) !important;
+    line-height: 1 !important;
+    color: var(--dynamic-color) !important;
+    transition: color var(--transition-speed) ease;
+    flex-shrink: 0 !important;
+}
+
+.navbar .navbar-brand.brand-logo .brand-text {
+    font-family: 'Unbounded', system-ui, sans-serif !important;
+    font-weight: 800 !important;
+    font-size: clamp(1.25rem, 0.95rem + 1.6vw, 2.25rem) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.035em !important;
+    white-space: nowrap !important;
+    display: block !important;
+    min-width: 0 !important;
+    color: var(--dynamic-color) !important;
+    background: linear-gradient(
+        135deg,
+        var(--dynamic-color) 0%,
+        var(--dynamic-hover) 100%
+    ) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    transition: color var(--transition-speed) ease;
+}
+
+@media (max-width: 1199.98px) {
+    .navbar .navbar-brand.brand-logo {
+        margin-right: 0.25rem !important;
+    }
+
+    .navbar .navbar-brand.brand-logo .brand-text {
+        font-size: clamp(1.05rem, 4vw, 1.25rem) !important;
+        letter-spacing: -0.02em !important;
+    }
+
+    .navbar .navbar-brand.brand-logo .badge-icon {
+        font-size: clamp(1.15rem, 3.5vw, 1.35rem) !important;
+    }
+}
