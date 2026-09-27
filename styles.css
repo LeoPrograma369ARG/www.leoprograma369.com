@@ -78,3 +78,62 @@ body {
     background-color: #ffffff !important;
     color: #000000 !important; /* Icono negro al pasar el mouse */
 }
+
+/* ==========================================================
+   MARCA / TÍTULO DEL NAVBAR
+   Más ancho · Unbounded · Azul (claro) / Rojo (oscuro)
+   ========================================================== */
+
+.navbar-brand.brand-logo {
+    flex-shrink: 0;
+    gap: 0.7rem !important;
+    margin-right: 1.5rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    max-width: none;
+}
+
+.brand-logo .badge-icon {
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--dynamic-color);
+    transition: color var(--transition-speed) ease;
+}
+
+/* Pisa el 20px / #000000 / Plus Jakarta del inspector */
+.navbar-brand .brand-text,
+span.brand-text {
+    font-family: 'Unbounded', system-ui, sans-serif !important;
+    font-weight: 800 !important;
+    font-size: clamp(1.45rem, 1.15rem + 1.35vw, 2.05rem) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.035em;
+    white-space: nowrap;
+    display: inline-block;
+    color: var(--dynamic-color) !important;
+    background: linear-gradient(
+        135deg,
+        var(--dynamic-color) 0%,
+        var(--dynamic-hover) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color var(--transition-speed) ease;
+}
+
+@media (max-width: 1199.98px) {
+    .navbar-brand .brand-text,
+    span.brand-text {
+        font-size: 1.28rem !important;
+        letter-spacing: -0.02em;
+    }
+
+    .brand-logo .badge-icon {
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand.brand-logo {
+        margin-right: 0.5rem;
+    }
+}
