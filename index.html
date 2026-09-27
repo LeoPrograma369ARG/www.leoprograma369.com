@@ -3,402 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta etiquetas SEO -->
-    <meta name="description" content="Portafolio oficial de Leo Programa 369: Proyectos, Formación, Habilidades y Recursos Educativos.">
+    <meta name="description" content="Leo Programa 369: desarrollo y diseño web, frontend y backend, programación de básico a avanzado, proyectos a gran escala y SEO para Google.">
     <meta name="author" content="Leo Programa 369">
-    <title>Leo Programa 369 | Portafolio & Educación</title>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://leoprograma369.com/">
+    <title>Leo Programa 369 | Desarrollo Web, Aprendizaje y SEO</title>
 
-    <!-- Tipografía SEO Optimizada: Plus Jakarta Sans (Google Fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5.3.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons (Para todas las redes sociales y elementos visuales) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
-    <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ========================================== -->
-    <!-- NAVBAR Y MENÚ SUPERIOR ACTUALIZADO -->
-    <!-- ========================================== -->
     <header class="sticky-top shadow-sm">
         <nav class="navbar navbar-expand-xl bg-body-tertiary py-2">
-            <div class="container">
-                <!-- TÍTULO: Recupera su tamaño original y degradado -->
-               <a class="navbar-brand d-flex align-items-center gap-2 brand-logo" href="#inicio">
-               <i class="bi bi-code-slash badge-icon"></i>
-               <span class="brand-text">Leo Programa 369</span>
-               </a>
+            <div class="container-fluid px-3 px-xl-4">
+                <a class="navbar-brand d-flex align-items-center gap-2 brand-logo" href="#inicio">
+                    <i class="bi bi-code-slash badge-icon"></i>
+                    <span class="brand-text">Leo Programa 369</span>
+                </a>
 
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- MENÚ: Reducido en márgenes para que entre en una sola línea -->
                     <ul class="navbar-nav ms-auto align-items-xl-center gap-1">
                         <li class="nav-item"><a class="nav-link menu-link active" href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link menu-link" href="#hobbies" data-es="Hobbies" data-en="Hobbies">Hobbies</a></li>
-                        <div class="text-center mb-5">
-    <h2 class="fw-bold" data-es="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</h2>
-                            
-    <p class="text-muted mx-auto" style="max-width: 720px;"
-       data-es="No es solo una lista de herramientas: es el camino de aprendizaje y la base con la que armo sitios, apps educativas y proyectos a gran escala."
-       data-en="Not just a tool list: it is the learning path and the foundation I use to build sites, educational apps and large-scale projects.">
-        No es solo una lista de herramientas: es el camino de aprendizaje y la base con la que armo sitios, apps educativas y proyectos a gran escala.
-    </p>
-</div>
-                        <div class="row g-4 mt-1">
-    <div class="col-md-6 col-lg-3">
-        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
-            <div class="card-body">
-                <i class="bi bi-code-slash fs-1 text-accent"></i>
-                <h3 class="h5 fw-bold mt-2" data-es="Frontend de básico a avanzado" data-en="Frontend from beginner to advanced">Frontend de básico a avanzado</h3>
-                <p class="text-muted small"
-                   data-es="Desde la primera etiqueta HTML hasta layouts complejos, JavaScript ES6+, componentes reutilizables, accesibilidad y tema claro/oscuro."
-                   data-en="From the first HTML tag to complex layouts, ES6+ JavaScript, reusable components, accessibility and light/dark theme.">
-                    Desde la primera etiqueta HTML hasta layouts complejos, JavaScript ES6+, componentes reutilizables, accesibilidad y tema claro/oscuro.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
-            <div class="card-body">
-                <i class="bi bi-hdd-network fs-1 text-danger"></i>
-                <h3 class="h5 fw-bold mt-2" data-es="Backend y datos" data-en="Backend and data">Backend y datos</h3>
-                <p class="text-muted small"
-                   data-es="Lógica de servidor, APIs, autenticación básica, bases de datos y cómo una app deja de ser solo una página estática."
-                   data-en="Server logic, APIs, basic auth, databases and how an app becomes more than a static page.">
-                    Lógica de servidor, APIs, autenticación básica, bases de datos y cómo una app deja de ser solo una página estática.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
-            <div class="card-body">
-                <i class="bi bi-mortarboard fs-1 text-accent"></i>
-                <h3 class="h5 fw-bold mt-2" data-es="Educación digital" data-en="Digital education">Educación digital</h3>
-                <p class="text-muted small"
-                   data-es="Rutas de aprendizaje tipo roadmap, tutoriales, contenido sin barreras y plataformas para enseñar programación a escala."
-                   data-en="Roadmap-style learning paths, tutorials, barrier-free content and platforms to teach programming at scale.">
-                    Rutas de aprendizaje tipo roadmap, tutoriales, contenido sin barreras y plataformas para enseñar programación a escala.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
-            <div class="card-body">
-                <i class="bi bi-diagram-3 fs-1 text-danger"></i>
-                <h3 class="h5 fw-bold mt-2" data-es="Arquitectura a gran escala" data-en="Large-scale architecture">Arquitectura a gran escala</h3>
-                <p class="text-muted small"
-                   data-es="Pensar módulos, multi-página o one-page, i18n, SEO, CI/CD, DNS y un mismo producto en web + redes + repositorios."
-                   data-en="Thinking in modules, multi-page or one-page, i18n, SEO, CI/CD, DNS and one product across web, social and repos.">
-                    Pensar módulos, multi-página o one-page, i18n, SEO, CI/CD, DNS y un mismo producto en web + redes + repositorios.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-                
+                        <li class="nav-item"><a class="nav-link menu-link" href="#habilidades-tecnicas" data-es="H. Técnicas" data-en="Tech Skills">H. Técnicas</a></li>
                         <li class="nav-item"><a class="nav-link menu-link" href="#habilidades-blandas" data-es="H. Blandas" data-en="Soft Skills">H. Blandas</a></li>
-                        <ul class="list-group list-group-flush shadow-sm rounded-3">
-    <li class="list-group-item p-4">
-        <div class="d-flex justify-content-between align-items-center mb-1">
-            <h3 class="h5 fw-bold text-accent mb-0" data-es="Ruta autodidacta: de básico a avanzado" data-en="Self-taught path: beginner to advanced">Ruta autodidacta: de básico a avanzado</h3>
-            <span class="badge bg-danger" data-es="En curso permanente" data-en="Ongoing">En curso permanente</span>
-        </div>
-        <p class="text-muted small mb-0"
-           data-es="Aprendizaje continuo con proyectos reales: HTML, CSS, JS, diseño web, frontend/backend, SEO y publicación. Cada concepto se valida en producción (este sitio, apps y repos públicos)."
-           data-en="Continuous learning through real projects: HTML, CSS, JS, web design, frontend/backend, SEO and shipping. Every concept is validated in production (this site, apps and public repos).">
-            Aprendizaje continuo con proyectos reales: HTML, CSS, JS, diseño web, frontend/backend, SEO y publicación. Cada concepto se valida en producción (este sitio, apps y repos públicos).
-        </p>
-    </li>
-    <li class="list-group-item p-4">
-        <div class="d-flex justify-content-between align-items-center mb-1">
-            <h3 class="h5 fw-bold text-accent mb-0" data-es="Especialización en Desarrollo Web" data-en="Web Development Specialization">Especialización en Desarrollo Web</h3>
-            <span class="badge bg-danger" data-es="Completado" data-en="Completed">Completado</span>
-        </div>
-        <p class="text-muted small mb-0"
-           data-es="Plataformas de educación abierta — HTML5, CSS3, JavaScript y Bootstrap 5, con foco en semántica, responsive y componentes reutilizables."
-           data-en="Open education platforms — HTML5, CSS3, JavaScript and Bootstrap 5, focused on semantics, responsive layout and reusable components.">
-            Plataformas de educación abierta — HTML5, CSS3, JavaScript y Bootstrap 5, con foco en semántica, responsive y componentes reutilizables.
-        </p>
-    </li>
-    <li class="list-group-item p-4">
-        <div class="d-flex justify-content-between align-items-center mb-1">
-            <h3 class="h5 fw-bold text-accent mb-0" data-es="Azure DevOps y GitHub Workflows" data-en="Azure DevOps and GitHub Workflows">Azure DevOps y GitHub Workflows</h3>
-            <span class="badge bg-danger" data-es="Certificado" data-en="Certified">Certificado</span>
-        </div>
-        <p class="text-muted small mb-0"
-           data-es="Repositorios, automatización, integración continua y el flujo que permite mantener proyectos a gran escala sin desplegar a mano."
-           data-en="Repositories, automation, continuous integration and the flow that keeps large-scale projects shipping without manual deploys.">
-            Repositorios, automatización, integración continua y el flujo que permite mantener proyectos a gran escala sin desplegar a mano.
-        </p>
-    </li>
-    <li class="list-group-item p-4">
-        <div class="d-flex justify-content-between align-items-center mb-1">
-            <h3 class="h5 fw-bold text-accent mb-0" data-es="Educación abierta y creación de contenido" data-en="Open education and content creation">Educación abierta y creación de contenido</h3>
-            <span class="badge bg-primary" data-es="Práctica diaria" data-en="Daily practice">Práctica diaria</span>
-        </div>
-        <p class="text-muted small mb-0"
-           data-es="Enseñar programación sin barreras: tutoriales, rutas tipo roadmap.sh, edición y difusión en YouTube, GitHub y redes. El contenido es parte del producto, no marketing aparte."
-           data-en="Teaching programming without barriers: tutorials, roadmap.sh-style paths, editing and publishing on YouTube, GitHub and social. Content is part of the product, not separate marketing.">
-            Enseñar programación sin barreras: tutoriales, rutas tipo roadmap.sh, edición y difusión en YouTube, GitHub y redes. El contenido es parte del producto, no marketing aparte.
-        </p>
-    </li>
-</ul>
-                        <section id="aprendizaje" class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold" data-es="Aprendizaje: de cero a proyectos reales" data-en="Learning: from zero to real projects">Aprendizaje: de cero a proyectos reales</h2>
-            <p class="text-muted mx-auto" style="max-width: 760px;"
-               data-es="El mismo camino que recorro y enseño: no memorizar sintaxis, sino construir. Cada etapa termina en algo publicado: una página, una app, un repo o una plataforma educativa."
-               data-en="The same path I follow and teach: not memorizing syntax, but building. Each stage ends in something shipped: a page, an app, a repo or an educational platform.">
-                El mismo camino que recorro y enseño: no memorizar sintaxis, sino construir. Cada etapa termina en algo publicado: una página, una app, un repo o una plataforma educativa.
-            </p>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 custom-card p-3 border-0 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-primary mb-2" data-es="Nivel 1 · Base" data-en="Level 1 · Foundations">Nivel 1 · Base</span>
-                        <h3 class="h5 fw-bold" data-es="Fundamentos de la web" data-en="Web fundamentals">Fundamentos de la web</h3>
-                        <p class="text-muted small"
-                           data-es="HTML5 semántico, CSS (caja, Flexbox, Grid), JavaScript desde variables y funciones hasta el DOM. Cómo funciona un navegador, un servidor y un dominio. Primera página real, no un tutorial suelto."
-                           data-en="Semantic HTML5, CSS (box model, Flexbox, Grid), JavaScript from variables and functions to the DOM. How a browser, a server and a domain work. A real first page, not a disconnected tutorial.">
-                            HTML5 semántico, CSS (caja, Flexbox, Grid), JavaScript desde variables y funciones hasta el DOM. Cómo funciona un navegador, un servidor y un dominio. Primera página real, no un tutorial suelto.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 custom-card p-3 border-0 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-success mb-2" data-es="Nivel 2 · Oficio" data-en="Level 2 · Craft">Nivel 2 · Oficio</span>
-                        <h3 class="h5 fw-bold" data-es="Diseño, frontend y producto" data-en="Design, frontend and product">Diseño, frontend y producto</h3>
-                        <p class="text-muted small"
-                           data-es="Maquetación mobile-first, Bootstrap 5, tipografía, color, tema claro/oscuro, componentes, i18n (ES/EN) y UX. El sitio deja de ser un ejercicio y pasa a ser una marca usable en celular y escritorio."
-                           data-en="Mobile-first layout, Bootstrap 5, type, color, light/dark theme, components, i18n (EN/ES) and UX. The site stops being an exercise and becomes a brand that works on phone and desktop.">
-                            Maquetación mobile-first, Bootstrap 5, tipografía, color, tema claro/oscuro, componentes, i18n (ES/EN) y UX. El sitio deja de ser un ejercicio y pasa a ser una marca usable en celular y escritorio.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 custom-card p-3 border-0 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-danger mb-2" data-es="Nivel 3 · Sistema" data-en="Level 3 · System">Nivel 3 · Sistema</span>
-                        <h3 class="h5 fw-bold" data-es="Backend, datos y automatización" data-en="Backend, data and automation">Backend, datos y automatización</h3>
-                        <p class="text-muted small"
-                           data-es="APIs, lógica de servidor, persistencia, Git de verdad (ramas, PRs), GitHub Actions, Azure DevOps, DNS, HTTPS y deploys continuos. Lo que separa un demo de un producto que se actualiza solo."
-                           data-en="APIs, server logic, persistence, real Git (branches, PRs), GitHub Actions, Azure DevOps, DNS, HTTPS and continuous deploys. What separates a demo from a product that ships itself.">
-                            APIs, lógica de servidor, persistencia, Git de verdad (ramas, PRs), GitHub Actions, Azure DevOps, DNS, HTTPS y deploys continuos. Lo que separa un demo de un producto que se actualiza solo.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 custom-card p-3 border-0 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-secondary mb-2" data-es="Nivel 4 · Escala" data-en="Level 4 · Scale">Nivel 4 · Escala</span>
-                        <h3 class="h5 fw-bold" data-es="SEO, contenido y gran escala" data-en="SEO, content and large scale">SEO, contenido y gran escala</h3>
-                        <p class="text-muted small"
-                           data-es="Títulos, meta, canonical, sitemap, robots.txt, datos estructurados, Search Console. Arquitectura de información para plataformas educativas, varios idiomas y presencia en YouTube, GitHub y redes."
-                           data-en="Titles, meta, canonical, sitemap, robots.txt, structured data, Search Console. Information architecture for educational platforms, multiple languages and presence on YouTube, GitHub and social.">
-                            Títulos, meta, canonical, sitemap, robots.txt, datos estructurados, Search Console. Arquitectura de información para plataformas educativas, varios idiomas y presencia en YouTube, GitHub y redes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 custom-card p-3 border-0 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-info text-dark mb-2" data-es="Método" data-en="Method">Método</span>
-                        <h3 class="h5 fw-bold" data-es="Aprender haciendo y enseñando" data-en="Learn by doing and teaching">Aprender haciendo y enseñando</h3>
-                        <p class="text-muted small"
-                           data-es="Proyecto propio desde el día uno. Documentar, grabar, publicar. Enseñar obliga a ordenar ideas: por eso AprenderGratis.io y el contenido en redes son parte del aprendizaje, no un extra."
-                           data-en="A real project from day one. Document, record, publish. Teaching forces clarity: that is why AprenderGratis.io and social content are part of the learning, not an extra.">
-                            Proyecto propio desde el día uno. Documentar, grabar, publicar. Enseñar obliga a ordenar ideas: por eso AprenderGratis.io y el contenido en redes son parte del aprendizaje, no un extra.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 custom-card p-3 border-0 shadow-sm">
-                    <div class="card-body">
-                        <span class="badge bg-dark mb-2" data-es="Para quién" data-en="Who it's for">Para quién</span>
-                        <h3 class="h5 fw-bold" data-es="Sin barreras de entrada" data-en="No barriers to entry">Sin barreras de entrada</h3>
-                        <p class="text-muted small"
-                           data-es="Quien empieza de cero, quien ya maqueta y quiere backend/SEO, o quien necesita un producto real (portafolio, plataforma educativa, portal de contenido). El nivel se ajusta al proyecto, no al ego del stack."
-                           data-en="Complete beginners, people who already layout pages and want backend/SEO, or anyone who needs a real product (portfolio, education platform, content portal). Level follows the project, not stack ego.">
-                            Quien empieza de cero, quien ya maqueta y quiere backend/SEO, o quien necesita un producto real (portafolio, plataforma educativa, portal de contenido). El nivel se ajusta al proyecto, no al ego del stack.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-                        <section id="stack" class="py-5 bg-body-secondary">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold" data-es="Lenguajes, plataformas y aplicaciones" data-en="Languages, platforms and applications">Lenguajes, plataformas y aplicaciones</h2>
-            <p class="text-muted mx-auto" style="max-width: 760px;"
-               data-es="El mapa completo con el que estudio, enseño y publico: del editor al buscador, del repo a la red social. Un mismo ecosistema, varias capas."
-               data-en="The full map I study, teach and ship with: from the editor to the search engine, from the repo to social. One ecosystem, several layers.">
-                El mapa completo con el que estudio, enseño y publico: del editor al buscador, del repo a la red social. Un mismo ecosistema, varias capas.
-            </p>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 custom-card p-4 border-0 shadow-sm">
-                    <h3 class="h5 fw-bold text-accent" data-es="Lenguajes" data-en="Languages">Lenguajes</h3>
-                    <ul class="small text-muted mb-0 ps-3">
-                        <li data-es="HTML5 semántico (estructura, SEO, accesibilidad)" data-en="Semantic HTML5 (structure, SEO, accessibility)">HTML5 semántico (estructura, SEO, accesibilidad)</li>
-                        <li data-es="CSS3: Flexbox, Grid, variables, temas" data-en="CSS3: Flexbox, Grid, variables, themes">CSS3: Flexbox, Grid, variables, temas</li>
-                        <li data-es="JavaScript ES6+ (DOM, eventos, localStorage)" data-en="JavaScript ES6+ (DOM, events, localStorage)">JavaScript ES6+ (DOM, eventos, localStorage)</li>
-                        <li data-es="JSON y datos estructurados (schema.org)" data-en="JSON and structured data (schema.org)">JSON y datos estructurados (schema.org)</li>
-                        <li data-es="Markdown y XML (README, sitemap, RSS futuro)" data-en="Markdown and XML (README, sitemap, future RSS)">Markdown y XML (README, sitemap, RSS futuro)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 custom-card p-4 border-0 shadow-sm">
-                    <h3 class="h5 fw-bold text-accent" data-es="Frameworks y UI" data-en="Frameworks and UI">Frameworks y UI</h3>
-                    <ul class="small text-muted mb-0 ps-3">
-                        <li data-es="Bootstrap 5.3 (mobile-first, componentes)" data-en="Bootstrap 5.3 (mobile-first, components)">Bootstrap 5.3 (mobile-first, componentes)</li>
-                        <li data-es="Bootstrap Icons y sistema visual propio" data-en="Bootstrap Icons and custom visual system">Bootstrap Icons y sistema visual propio</li>
-                        <li data-es="Temas claro/oscuro (data-bs-theme)" data-en="Light/dark themes (data-bs-theme)">Temas claro/oscuro (data-bs-theme)</li>
-                        <li data-es="Diseño responsive y tipografía web (Google Fonts)" data-en="Responsive design and web type (Google Fonts)">Diseño responsive y tipografía web (Google Fonts)</li>
-                        <li data-es="i18n nativo ES/EN por atributos data-*" data-en="Native EN/ES i18n via data-* attributes">i18n nativo ES/EN por atributos data-*</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 custom-card p-4 border-0 shadow-sm">
-                    <h3 class="h5 fw-bold text-accent" data-es="Plataformas de código" data-en="Code platforms">Plataformas de código</h3>
-                    <ul class="small text-muted mb-0 ps-3">
-                        <li data-es="Git y GitHub (repos, Pages, CNAME)" data-en="Git and GitHub (repos, Pages, CNAME)">Git y GitHub (repos, Pages, CNAME)</li>
-                        <li data-es="GitHub Actions (CI/CD)" data-en="GitHub Actions (CI/CD)">GitHub Actions (CI/CD)</li>
-                        <li data-es="Azure DevOps y workflows" data-en="Azure DevOps and workflows">Azure DevOps y workflows</li>
-                        <li data-es="GitHub Pages + dominio propio + HTTPS" data-en="GitHub Pages + custom domain + HTTPS">GitHub Pages + dominio propio + HTTPS</li>
-                        <li data-es="DNS, deploys continuos y Open Source" data-en="DNS, continuous deploys and Open Source">DNS, deploys continuos y Open Source</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 custom-card p-4 border-0 shadow-sm">
-                    <h3 class="h5 fw-bold text-accent" data-es="Apps y canales" data-en="Apps and channels">Apps y canales</h3>
-                    <ul class="small text-muted mb-0 ps-3">
-                        <li data-es="Apps web y landings one-page" data-en="Web apps and one-page landings">Apps web y landings one-page</li>
-                        <li data-es="Plataformas educativas (tipo roadmap)" data-en="Educational platforms (roadmap-style)">Plataformas educativas (tipo roadmap)</li>
-                        <li data-es="Portales de contenido y monetización" data-en="Content and monetization portals">Portales de contenido y monetización</li>
-                        <li data-es="Google Search Console, sitemap, SEO on-page" data-en="Google Search Console, sitemap, on-page SEO">Google Search Console, sitemap, SEO on-page</li>
-                        <li data-es="YouTube, GitHub, Instagram, TikTok, X, WhatsApp, Telegram" data-en="YouTube, GitHub, Instagram, TikTok, X, WhatsApp, Telegram">YouTube, GitHub, Instagram, TikTok, X, WhatsApp, Telegram</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-                        <div class="text-center mb-5">
-    <h2 class="fw-bold" data-es="Proyectos a gran escala" data-en="Large-scale projects">Proyectos a gran escala</h2>
-    <p class="text-muted mx-auto" style="max-width: 760px;"
-       data-es="No son demos de tutorial: son ecosistemas con varias capas (web, repo, SEO, idiomas, redes) pensados para crecer en usuarios, contenido y módulos."
-       data-en="Not tutorial demos: ecosystems with several layers (web, repo, SEO, languages, social) designed to grow in users, content and modules.">
-        No son demos de tutorial: son ecosistemas con varias capas (web, repo, SEO, idiomas, redes) pensados para crecer en usuarios, contenido y módulos.
-    </p>
-</div>
-
-<div class="row g-4">
-    <div class="col-md-6 col-lg-4">
-        <div class="card h-100 custom-card border-0 shadow-sm p-3">
-            <div class="card-body">
-                <span class="badge bg-primary mb-2" data-es="Plataforma educativa" data-en="Education platform">Plataforma educativa</span>
-                <h3 class="h5 card-title fw-bold">AprenderGratis.io</h3>
-                <p class="card-text text-muted small"
-                   data-es="Plataforma de aprendizaje inspirada en roadmap.sh: rutas de programación de lo más básico a avanzado, frontend y backend, diseño web y SEO. Pensada para miles de visitantes, contenido modular y acceso gratuito. No es un blog: es un producto educativo a escala, con repo público y evolución continua."
-                   data-en="Learning platform inspired by roadmap.sh: programming paths from beginner to advanced, frontend and backend, web design and SEO. Built for thousands of visitors, modular content and free access. Not a blog: an educational product at scale, with a public repo and continuous evolution.">
-                    Plataforma de aprendizaje inspirada en roadmap.sh: rutas de programación de lo más básico a avanzado, frontend y backend, diseño web y SEO. Pensada para miles de visitantes, contenido modular y acceso gratuito. No es un blog: es un producto educativo a escala, con repo público y evolución continua.
-                </p>
-                <p class="small mb-0">
-                    <span class="badge text-bg-light" data-es="HTML · CSS · JS · GitHub" data-en="HTML · CSS · JS · GitHub">HTML · CSS · JS · GitHub</span>
-                </p>
-            </div>
-            <div class="card-footer bg-transparent border-top-0">
-                <a href="https://github.com/LeoPrograma369ARG/AprenderGratis.io" target="_blank" class="btn btn-violaceo shadow-red btn-sm w-100">
-                    <i class="bi bi-github me-1"></i> <span data-es="Ver ecosistema" data-en="View ecosystem">Ver ecosistema</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4">
-        <div class="card h-100 custom-card border-0 shadow-sm p-3">
-            <div class="card-body">
-                <span class="badge bg-success mb-2" data-es="Portal multi-módulo" data-en="Multi-module portal">Portal multi-módulo</span>
-                <h3 class="h5 card-title fw-bold">Gamer Rentable</h3>
-                <p class="card-text text-muted small"
-                   data-es="Portal a gran escala que mezcla contenido, monetización y comunidad: microtareas, afiliados, videojuegos retro y canales de difusión. Varias verticales en un solo producto (web + redes), pensado como negocio digital, no como landing de una sola oferta."
-                   data-en="Large-scale portal mixing content, monetization and community: microtasks, affiliates, retro games and distribution channels. Several verticals in one product (web + social), designed as a digital business, not a single-offer landing.">
-                    Portal a gran escala que mezcla contenido, monetización y comunidad: microtareas, afiliados, videojuegos retro y canales de difusión. Varias verticales en un solo producto (web + redes), pensado como negocio digital, no como landing de una sola oferta.
-                </p>
-                <p class="small mb-0">
-                    <span class="badge text-bg-light" data-es="Web app · Contenido · Afiliados" data-en="Web app · Content · Affiliates">Web app · Contenido · Afiliados</span>
-                </p>
-            </div>
-            <div class="card-footer bg-transparent border-top-0">
-                <a href="#" class="btn btn-violaceo shadow-red btn-sm w-100">
-                    <i class="bi bi-box-arrow-up-right me-1"></i> <span data-es="Ver ecosistema" data-en="View ecosystem">Ver ecosistema</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4">
-        <div class="card h-100 custom-card border-0 shadow-sm p-3">
-            <div class="card-body">
-                <span class="badge bg-danger mb-2" data-es="Producto open source" data-en="Open source product">Producto open source</span>
-                <h3 class="h5 card-title fw-bold">LeoPrograma369 Web</h3>
-                <p class="card-text text-muted small"
-                   data-es="Plantilla-producto a escala de marca personal: SEO, i18n ES/EN, tema claro/oscuro, GitHub Pages, dominio propio y presencia multiplataforma. Sirve de portafolio, de base educativa y de sistema reutilizable para otros sitios del ecosistema."
-                   data-en="A personal-brand template at product scale: SEO, EN/ES i18n, light/dark theme, GitHub Pages, custom domain and multi-platform presence. It works as portfolio, education base and a reusable system for other sites in the ecosystem.">
-                    Plantilla-producto a escala de marca personal: SEO, i18n ES/EN, tema claro/oscuro, GitHub Pages, dominio propio y presencia multiplataforma. Sirve de portafolio, de base educativa y de sistema reutilizable para otros sitios del ecosistema.
-                </p>
-                <p class="small mb-0">
-                    <span class="badge text-bg-light" data-es="Bootstrap 5 · SEO · i18n · CI/CD" data-en="Bootstrap 5 · SEO · i18n · CI/CD">Bootstrap 5 · SEO · i18n · CI/CD</span>
-                </p>
-            </div>
-            <div class="card-footer bg-transparent border-top-0">
-                <a href="https://github.com/LeoPrograma369ARG" target="_blank" class="btn btn-violaceo shadow-red btn-sm w-100">
-                    <i class="bi bi-code-square me-1"></i> <span data-es="Ver ecosistema" data-en="View ecosystem">Ver ecosistema</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+                        <li class="nav-item"><a class="nav-link menu-link" href="#aprendizaje" data-es="Aprendizaje" data-en="Learning">Aprendizaje</a></li>
+                        <li class="nav-item"><a class="nav-link menu-link" href="#stack" data-es="Stack" data-en="Stack">Stack</a></li>
+                        <li class="nav-item"><a class="nav-link menu-link" href="#formacion" data-es="Formación" data-en="Education">Formación</a></li>
+                        <li class="nav-item"><a class="nav-link menu-link" href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
                         <li class="nav-item"><a class="nav-link menu-link" href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
-                        
-                        <!-- BOTONES DE MODO Y TRADUCCIÓN: Agrupados y elegantes -->
                         <li class="nav-item ms-xl-2 mt-3 mt-xl-0 d-flex gap-2 justify-content-center">
-                            <button id="theme-toggle" class="btn btn-theme-dynamic btn-sm px-3 py-2">
-                                <i class="bi bi-moon-stars-fill me-1"></i> <span data-es="Modo" data-en="Mode">Modo</span>
+                            <button id="theme-toggle" class="btn btn-theme-dynamic btn-sm px-3 py-2" type="button">
+                                <i class="bi bi-moon-stars-fill me-1"></i> Modo Oscuro
                             </button>
-                            
-                            <button id="lang-toggle" class="btn btn-theme-dynamic btn-sm px-3 py-2">
+                            <button id="lang-toggle" class="btn btn-theme-dynamic btn-sm px-3 py-2" type="button">
                                 <i class="bi bi-globe me-1"></i> <span id="lang-text">EN</span>
                             </button>
                         </li>
@@ -409,12 +57,8 @@
     </header>
 
     <main>
-        <!-- ========================================== -->
-        <!-- SECCIÓN 1: INICIO (HERO SECTION)           -->
-        <!-- ========================================== -->
         <section id="inicio" class="hero-section text-center d-flex align-items-center py-5">
             <div class="container py-4">
-                <!-- Se protege el span anidado traduciendo solo el primer fragmento -->
                 <h1 class="display-3 fw-extrabold mb-3">
                     <span data-es="Hola, soy" data-en="Hi, I am">Hola, soy</span> <span class="text-accent">Leo Programa 369</span>
                 </h1>
@@ -422,11 +66,10 @@
                     <span data-es="Especialista en" data-en="Specialist in">Especialista en</span> <span id="typewriter" class="text-danger fw-bold"></span>
                 </h2>
                 <p class="lead text-muted mx-auto mb-5" style="max-width: 820px;"
-               data-es="Aprendo, enseño y construyo en la web. Desarrollo y diseño sitios y aplicaciones de principio a fin: frontend y backend, de lo más básico hasta proyectos a gran escala. Trabajo con HTML, CSS, JavaScript, Bootstrap, Git y plataformas como GitHub, GitHub Pages y Azure DevOps. Optimizo para SEO (Google y otros buscadores) y creo ecosistemas de aprendizaje, contenido y productos digitales que cruzan lenguajes, herramientas y canales."
-               data-en="I learn, teach and build on the web. I design and develop sites and apps end to end: frontend and backend, from the very basics to large-scale projects. I work with HTML, CSS, JavaScript, Bootstrap, Git and platforms such as GitHub, GitHub Pages and Azure DevOps. I optimize for SEO (Google and other search engines) and create learning ecosystems, content and digital products across languages, tools and channels.">
-                Aprendo, enseño y construyo en la web. Desarrollo y diseño sitios y aplicaciones de principio a fin: frontend y backend, de lo más básico hasta proyectos a gran escala. Trabajo con HTML, CSS, JavaScript, Bootstrap, Git y plataformas como GitHub, GitHub Pages y Azure DevOps. Optimizo para SEO (Google y otros buscadores) y creo ecosistemas de aprendizaje, contenido y productos digitales que cruzan lenguajes, herramientas y canales.
+                   data-es="Aprendo, enseño y construyo en la web. Desarrollo y diseño sitios y aplicaciones de principio a fin: frontend y backend, de lo más básico hasta proyectos a gran escala. Trabajo con HTML, CSS, JavaScript, Bootstrap, Git y plataformas como GitHub, GitHub Pages y Azure DevOps. Optimizo para SEO (Google y otros buscadores) y creo ecosistemas de aprendizaje, contenido y productos digitales."
+                   data-en="I learn, teach and build on the web. I design and develop sites and apps end to end: frontend and backend, from the very basics to large-scale projects. I work with HTML, CSS, JavaScript, Bootstrap, Git and platforms such as GitHub, GitHub Pages and Azure DevOps. I optimize for SEO (Google and other search engines) and create learning ecosystems, content and digital products.">
+                    Aprendo, enseño y construyo en la web. Desarrollo y diseño sitios y aplicaciones de principio a fin: frontend y backend, de lo más básico hasta proyectos a gran escala. Trabajo con HTML, CSS, JavaScript, Bootstrap, Git y plataformas como GitHub, GitHub Pages y Azure DevOps. Optimizo para SEO (Google y otros buscadores) y creo ecosistemas de aprendizaje, contenido y productos digitales.
                 </p>
-                <!-- Botones de Navegación Rápida -->
                 <div class="d-flex flex-wrap justify-content-center gap-3">
                     <a href="#proyectos" class="btn btn-violaceo btn-lg shadow-red" data-es="Explorar Proyectos" data-en="Explore Projects">Explorar Proyectos</a>
                     <a href="#contacto" class="btn btn-outline-dynamic btn-lg" data-es="Contacto Directo" data-en="Direct Contact">Contacto Directo</a>
@@ -434,9 +77,6 @@
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- SECCIÓN 2: HOBBIES                         -->
-        <!-- ========================================== -->
         <section id="hobbies" class="py-5 bg-body-secondary">
             <div class="container">
                 <div class="text-center mb-5">
@@ -475,14 +115,11 @@
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- SECCIÓN 3: HABILIDADES TÉCNICAS            -->
-        <!-- ========================================== -->
         <section id="habilidades-tecnicas" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="fw-bold" data-es="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</h2>
-                    <p class="text-muted" data-es="Lenguajes, frameworks y herramientas que domino" data-en="Languages, frameworks, and tools I master">Lenguajes, frameworks y herramientas que domino</p>
+                    <p class="text-muted mx-auto" style="max-width: 720px;" data-es="No es solo una lista de herramientas: es el camino de aprendizaje y la base con la que armo sitios, apps educativas y proyectos a gran escala." data-en="Not just a tool list: it is the learning path and the foundation I use to build sites, educational apps and large-scale projects.">No es solo una lista de herramientas: es el camino de aprendizaje y la base con la que armo sitios, apps educativas y proyectos a gran escala.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3">
@@ -498,7 +135,7 @@
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
                             <div class="card-body">
                                 <i class="bi bi-bootstrap-fill fs-1 text-accent"></i>
-                                <h3 class="h5 fw-bold mt-2" data-es="Bootstrap 5.3" data-en="Bootstrap 5.3">Bootstrap 5.3</h3>
+                                <h3 class="h5 fw-bold mt-2">Bootstrap 5.3</h3>
                                 <p class="text-muted small" data-es="Maquetación responsive mobile-first y temas personalizados." data-en="Responsive mobile-first layout and custom themes.">Maquetación responsive mobile-first y temas personalizados.</p>
                             </div>
                         </div>
@@ -507,7 +144,7 @@
                         <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
                             <div class="card-body">
                                 <i class="bi bi-git fs-1 text-danger"></i>
-                                <h3 class="h5 fw-bold mt-2" data-es="Git & GitHub" data-en="Git & GitHub">Git & GitHub</h3>
+                                <h3 class="h5 fw-bold mt-2">Git & GitHub</h3>
                                 <p class="text-muted small" data-es="Control de versiones, GitHub Pages, Actions y CNAME." data-en="Version control, GitHub Pages, Actions, and CNAME.">Control de versiones, GitHub Pages, Actions y CNAME.</p>
                             </div>
                         </div>
@@ -521,13 +158,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
+                            <div class="card-body">
+                                <i class="bi bi-code-slash fs-1 text-accent"></i>
+                                <h3 class="h5 fw-bold mt-2" data-es="Frontend de básico a avanzado" data-en="Frontend from beginner to advanced">Frontend de básico a avanzado</h3>
+                                <p class="text-muted small" data-es="Desde la primera etiqueta HTML hasta layouts complejos, JavaScript ES6+, componentes reutilizables, accesibilidad y tema claro/oscuro." data-en="From the first HTML tag to complex layouts, ES6+ JavaScript, reusable components, accessibility and light/dark theme.">Desde la primera etiqueta HTML hasta layouts complejos, JavaScript ES6+, componentes reutilizables, accesibilidad y tema claro/oscuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
+                            <div class="card-body">
+                                <i class="bi bi-hdd-network fs-1 text-danger"></i>
+                                <h3 class="h5 fw-bold mt-2" data-es="Backend y datos" data-en="Backend and data">Backend y datos</h3>
+                                <p class="text-muted small" data-es="Lógica de servidor, APIs, autenticación básica, bases de datos y cómo una app deja de ser solo una página estática." data-en="Server logic, APIs, basic auth, databases and how an app becomes more than a static page.">Lógica de servidor, APIs, autenticación básica, bases de datos y cómo una app deja de ser solo una página estática.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
+                            <div class="card-body">
+                                <i class="bi bi-mortarboard fs-1 text-accent"></i>
+                                <h3 class="h5 fw-bold mt-2" data-es="Educación digital" data-en="Digital education">Educación digital</h3>
+                                <p class="text-muted small" data-es="Rutas de aprendizaje tipo roadmap, tutoriales, contenido sin barreras y plataformas para enseñar programación a escala." data-en="Roadmap-style learning paths, tutorials, barrier-free content and platforms to teach programming at scale.">Rutas de aprendizaje tipo roadmap, tutoriales, contenido sin barreras y plataformas para enseñar programación a escala.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm text-center">
+                            <div class="card-body">
+                                <i class="bi bi-diagram-3 fs-1 text-danger"></i>
+                                <h3 class="h5 fw-bold mt-2" data-es="Arquitectura a gran escala" data-en="Large-scale architecture">Arquitectura a gran escala</h3>
+                                <p class="text-muted small" data-es="Pensar módulos, multi-página o one-page, i18n, SEO, CI/CD, DNS y un mismo producto en web + redes + repositorios." data-en="Thinking in modules, multi-page or one-page, i18n, SEO, CI/CD, DNS and one product across web, social and repos.">Pensar módulos, multi-página o one-page, i18n, SEO, CI/CD, DNS y un mismo producto en web + redes + repositorios.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- SECCIÓN 4: HABILIDADES BLANDAS             -->
-        <!-- ========================================== -->
         <section id="habilidades-blandas" class="py-5 bg-body-secondary">
             <div class="container">
                 <div class="text-center mb-5">
@@ -566,31 +236,166 @@
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- SECCIÓN 5: FORMACIÓN                      -->
-        <!-- ========================================== -->
+        <section id="aprendizaje" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold" data-es="Aprendizaje: de cero a proyectos reales" data-en="Learning: from zero to real projects">Aprendizaje: de cero a proyectos reales</h2>
+                    <p class="text-muted mx-auto" style="max-width: 760px;" data-es="El mismo camino que recorro y enseño: no memorizar sintaxis, sino construir. Cada etapa termina en algo publicado: una página, una app, un repo o una plataforma educativa." data-en="The same path I follow and teach: not memorizing syntax, but building. Each stage ends in something shipped: a page, an app, a repo or an educational platform.">El mismo camino que recorro y enseño: no memorizar sintaxis, sino construir. Cada etapa termina en algo publicado: una página, una app, un repo o una plataforma educativa.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2" data-es="Nivel 1 · Base" data-en="Level 1 · Foundations">Nivel 1 · Base</span>
+                                <h3 class="h5 fw-bold" data-es="Fundamentos de la web" data-en="Web fundamentals">Fundamentos de la web</h3>
+                                <p class="text-muted small" data-es="HTML5 semántico, CSS (caja, Flexbox, Grid), JavaScript desde variables y funciones hasta el DOM. Primera página real, no un tutorial suelto." data-en="Semantic HTML5, CSS (box model, Flexbox, Grid), JavaScript from variables and functions to the DOM. A real first page, not a disconnected tutorial.">HTML5 semántico, CSS (caja, Flexbox, Grid), JavaScript desde variables y funciones hasta el DOM. Primera página real, no un tutorial suelto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2" data-es="Nivel 2 · Oficio" data-en="Level 2 · Craft">Nivel 2 · Oficio</span>
+                                <h3 class="h5 fw-bold" data-es="Diseño, frontend y producto" data-en="Design, frontend and product">Diseño, frontend y producto</h3>
+                                <p class="text-muted small" data-es="Maquetación mobile-first, Bootstrap 5, tipografía, color, tema claro/oscuro, i18n ES/EN y UX. De ejercicio a marca usable." data-en="Mobile-first layout, Bootstrap 5, type, color, light/dark theme, EN/ES i18n and UX. From exercise to a usable brand.">Maquetación mobile-first, Bootstrap 5, tipografía, color, tema claro/oscuro, i18n ES/EN y UX. De ejercicio a marca usable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-danger mb-2" data-es="Nivel 3 · Sistema" data-en="Level 3 · System">Nivel 3 · Sistema</span>
+                                <h3 class="h5 fw-bold" data-es="Backend, datos y automatización" data-en="Backend, data and automation">Backend, datos y automatización</h3>
+                                <p class="text-muted small" data-es="APIs, servidor, Git, GitHub Actions, Azure DevOps, DNS, HTTPS y deploys. Lo que separa un demo de un producto." data-en="APIs, server, Git, GitHub Actions, Azure DevOps, DNS, HTTPS and deploys. What separates a demo from a product.">APIs, servidor, Git, GitHub Actions, Azure DevOps, DNS, HTTPS y deploys. Lo que separa un demo de un producto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-secondary mb-2" data-es="Nivel 4 · Escala" data-en="Level 4 · Scale">Nivel 4 · Escala</span>
+                                <h3 class="h5 fw-bold" data-es="SEO, contenido y gran escala" data-en="SEO, content and large scale">SEO, contenido y gran escala</h3>
+                                <p class="text-muted small" data-es="Títulos, meta, canonical, sitemap, robots.txt, Search Console e idiomas. Plataformas educativas y presencia en redes." data-en="Titles, meta, canonical, sitemap, robots.txt, Search Console and languages. Education platforms and social presence.">Títulos, meta, canonical, sitemap, robots.txt, Search Console e idiomas. Plataformas educativas y presencia en redes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-info text-dark mb-2" data-es="Método" data-en="Method">Método</span>
+                                <h3 class="h5 fw-bold" data-es="Aprender haciendo y enseñando" data-en="Learn by doing and teaching">Aprender haciendo y enseñando</h3>
+                                <p class="text-muted small" data-es="Proyecto propio desde el día uno. Documentar, grabar, publicar. AprenderGratis.io y las redes son parte del aprendizaje." data-en="A real project from day one. Document, record, publish. AprenderGratis.io and social are part of the learning.">Proyecto propio desde el día uno. Documentar, grabar, publicar. AprenderGratis.io y las redes son parte del aprendizaje.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 custom-card p-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <span class="badge bg-dark mb-2" data-es="Para quién" data-en="Who it's for">Para quién</span>
+                                <h3 class="h5 fw-bold" data-es="Sin barreras de entrada" data-en="No barriers to entry">Sin barreras de entrada</h3>
+                                <p class="text-muted small" data-es="Quien empieza de cero, quien ya maqueta y quiere backend/SEO, o quien necesita un producto real. El nivel se ajusta al proyecto." data-en="Beginners, people who already layout pages and want backend/SEO, or anyone who needs a real product. Level follows the project.">Quien empieza de cero, quien ya maqueta y quiere backend/SEO, o quien necesita un producto real. El nivel se ajusta al proyecto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="py-5 bg-body-secondary">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold" data-es="Lenguajes, plataformas y aplicaciones" data-en="Languages, platforms and applications">Lenguajes, plataformas y aplicaciones</h2>
+                    <p class="text-muted mx-auto" style="max-width: 760px;" data-es="El mapa con el que estudio, enseño y publico: del editor al buscador, del repo a la red social." data-en="The map I study, teach and ship with: from the editor to the search engine, from the repo to social.">El mapa con el que estudio, enseño y publico: del editor al buscador, del repo a la red social.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-4 border-0 shadow-sm">
+                            <h3 class="h5 fw-bold text-accent" data-es="Lenguajes" data-en="Languages">Lenguajes</h3>
+                            <ul class="small text-muted mb-0 ps-3">
+                                <li data-es="HTML5 semántico (estructura, SEO, accesibilidad)" data-en="Semantic HTML5 (structure, SEO, accessibility)">HTML5 semántico (estructura, SEO, accesibilidad)</li>
+                                <li data-es="CSS3: Flexbox, Grid, variables, temas" data-en="CSS3: Flexbox, Grid, variables, themes">CSS3: Flexbox, Grid, variables, temas</li>
+                                <li data-es="JavaScript ES6+ (DOM, eventos, localStorage)" data-en="JavaScript ES6+ (DOM, events, localStorage)">JavaScript ES6+ (DOM, eventos, localStorage)</li>
+                                <li data-es="JSON y datos estructurados (schema.org)" data-en="JSON and structured data (schema.org)">JSON y datos estructurados (schema.org)</li>
+                                <li data-es="Markdown y XML (README, sitemap)" data-en="Markdown and XML (README, sitemap)">Markdown y XML (README, sitemap)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-4 border-0 shadow-sm">
+                            <h3 class="h5 fw-bold text-accent" data-es="Frameworks y UI" data-en="Frameworks and UI">Frameworks y UI</h3>
+                            <ul class="small text-muted mb-0 ps-3">
+                                <li data-es="Bootstrap 5.3 (mobile-first, componentes)" data-en="Bootstrap 5.3 (mobile-first, components)">Bootstrap 5.3 (mobile-first, componentes)</li>
+                                <li data-es="Bootstrap Icons y sistema visual propio" data-en="Bootstrap Icons and custom visual system">Bootstrap Icons y sistema visual propio</li>
+                                <li data-es="Temas claro/oscuro (data-bs-theme)" data-en="Light/dark themes (data-bs-theme)">Temas claro/oscuro (data-bs-theme)</li>
+                                <li data-es="Diseño responsive y Google Fonts" data-en="Responsive design and Google Fonts">Diseño responsive y Google Fonts</li>
+                                <li data-es="i18n nativo ES/EN por data-*" data-en="Native EN/ES i18n via data-*">i18n nativo ES/EN por data-*</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-4 border-0 shadow-sm">
+                            <h3 class="h5 fw-bold text-accent" data-es="Plataformas de código" data-en="Code platforms">Plataformas de código</h3>
+                            <ul class="small text-muted mb-0 ps-3">
+                                <li data-es="Git y GitHub (repos, Pages, CNAME)" data-en="Git and GitHub (repos, Pages, CNAME)">Git y GitHub (repos, Pages, CNAME)</li>
+                                <li data-es="GitHub Actions (CI/CD)" data-en="GitHub Actions (CI/CD)">GitHub Actions (CI/CD)</li>
+                                <li data-es="Azure DevOps y workflows" data-en="Azure DevOps and workflows">Azure DevOps y workflows</li>
+                                <li data-es="GitHub Pages + dominio + HTTPS" data-en="GitHub Pages + domain + HTTPS">GitHub Pages + dominio + HTTPS</li>
+                                <li data-es="DNS, deploys y Open Source" data-en="DNS, deploys and Open Source">DNS, deploys y Open Source</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card p-4 border-0 shadow-sm">
+                            <h3 class="h5 fw-bold text-accent" data-es="Apps y canales" data-en="Apps and channels">Apps y canales</h3>
+                            <ul class="small text-muted mb-0 ps-3">
+                                <li data-es="Apps web y landings one-page" data-en="Web apps and one-page landings">Apps web y landings one-page</li>
+                                <li data-es="Plataformas educativas (tipo roadmap)" data-en="Educational platforms (roadmap-style)">Plataformas educativas (tipo roadmap)</li>
+                                <li data-es="Portales de contenido y monetización" data-en="Content and monetization portals">Portales de contenido y monetización</li>
+                                <li data-es="Google Search Console y SEO on-page" data-en="Google Search Console and on-page SEO">Google Search Console y SEO on-page</li>
+                                <li data-es="YouTube, GitHub, Instagram, TikTok, X" data-en="YouTube, GitHub, Instagram, TikTok, X">YouTube, GitHub, Instagram, TikTok, X</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="formacion" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="fw-bold" data-es="Formación & Certificaciones" data-en="Education & Certifications">Formación & Certificaciones</h2>
-                    <p class="text-muted" data-es="Mi camino académico y especializado" data-en="My academic and specialized path">Mi camino académico y especializado</p>
+                    <p class="text-muted" data-es="Aprendizaje continuo y camino especializado" data-en="Continuous learning and specialized path">Aprendizaje continuo y camino especializado</p>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-8">
                         <ul class="list-group list-group-flush shadow-sm rounded-3">
                             <li class="list-group-item p-4">
-                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                <div class="d-flex justify-content-between align-items-center mb-1 gap-2">
+                                    <h3 class="h5 fw-bold text-accent mb-0" data-es="Ruta autodidacta: de básico a avanzado" data-en="Self-taught path: beginner to advanced">Ruta autodidacta: de básico a avanzado</h3>
+                                    <span class="badge bg-danger" data-es="En curso" data-en="Ongoing">En curso</span>
+                                </div>
+                                <p class="text-muted small mb-0" data-es="Proyectos reales: HTML, CSS, JS, diseño web, frontend/backend, SEO y publicación. Cada concepto se valida en producción." data-en="Real projects: HTML, CSS, JS, web design, frontend/backend, SEO and shipping. Every concept is validated in production.">Proyectos reales: HTML, CSS, JS, diseño web, frontend/backend, SEO y publicación. Cada concepto se valida en producción.</p>
+                            </li>
+                            <li class="list-group-item p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-1 gap-2">
                                     <h3 class="h5 fw-bold text-accent mb-0" data-es="Especialización en Desarrollo Web" data-en="Web Development Specialization">Especialización en Desarrollo Web</h3>
                                     <span class="badge bg-danger" data-es="Completado" data-en="Completed">Completado</span>
                                 </div>
-                                <p class="text-muted small mb-0" data-es="Plataformas de Educación Abierta — Enfoque en HTML5, CSS3, JS y Bootstrap 5." data-en="Open Education Platforms — Focus on HTML5, CSS3, JS and Bootstrap 5.">Plataformas de Educación Abierta — Enfoque en HTML5, CSS3, JS y Bootstrap 5.</p>
+                                <p class="text-muted small mb-0" data-es="Educación abierta — HTML5, CSS3, JavaScript y Bootstrap 5." data-en="Open education — HTML5, CSS3, JavaScript and Bootstrap 5.">Educación abierta — HTML5, CSS3, JavaScript y Bootstrap 5.</p>
                             </li>
                             <li class="list-group-item p-4">
-                                <div class="d-flex justify-content-between align-items-center mb-1">
-                                    <h3 class="h5 fw-bold text-accent mb-0" data-es="Azure DevOps & GitHub Workflows" data-en="Azure DevOps & GitHub Workflows">Azure DevOps & GitHub Workflows</h3>
+                                <div class="d-flex justify-content-between align-items-center mb-1 gap-2">
+                                    <h3 class="h5 fw-bold text-accent mb-0" data-es="Azure DevOps y GitHub Workflows" data-en="Azure DevOps and GitHub Workflows">Azure DevOps y GitHub Workflows</h3>
                                     <span class="badge bg-danger" data-es="Certificado" data-en="Certified">Certificado</span>
                                 </div>
-                                <p class="text-muted small mb-0" data-es="Evaluación de repositorios, automatización e integración continua." data-en="Repository evaluation, automation and continuous integration.">Evaluación de repositorios, automatización e integración continua.</p>
+                                <p class="text-muted small mb-0" data-es="Repositorios, automatización e integración continua para proyectos a gran escala." data-en="Repositories, automation and continuous integration for large-scale projects.">Repositorios, automatización e integración continua para proyectos a gran escala.</p>
+                            </li>
+                            <li class="list-group-item p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-1 gap-2">
+                                    <h3 class="h5 fw-bold text-accent mb-0" data-es="Educación abierta y contenido" data-en="Open education and content">Educación abierta y contenido</h3>
+                                    <span class="badge bg-primary" data-es="Práctica diaria" data-en="Daily practice">Práctica diaria</span>
+                                </div>
+                                <p class="text-muted small mb-0" data-es="Enseñar sin barreras: tutoriales, rutas tipo roadmap.sh, YouTube, GitHub y redes." data-en="Teaching without barriers: tutorials, roadmap.sh-style paths, YouTube, GitHub and social.">Enseñar sin barreras: tutoriales, rutas tipo roadmap.sh, YouTube, GitHub y redes.</p>
                             </li>
                         </ul>
                     </div>
@@ -598,27 +403,23 @@
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- SECCIÓN 6: PROYECTOS                       -->
-        <!-- ========================================== -->
         <section id="proyectos" class="py-5 bg-body-secondary">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="fw-bold" data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
-                    <p class="text-muted" data-es="Demostraciones reales y plataformas activas" data-en="Real demonstrations and active platforms">Demostraciones reales y plataformas activas</p>
+                    <h2 class="fw-bold" data-es="Proyectos a gran escala" data-en="Large-scale projects">Proyectos a gran escala</h2>
+                    <p class="text-muted mx-auto" style="max-width: 760px;" data-es="Ecosistemas con varias capas (web, repo, SEO, idiomas, redes), no demos de tutorial." data-en="Ecosystems with several layers (web, repo, SEO, languages, social), not tutorial demos.">Ecosistemas con varias capas (web, repo, SEO, idiomas, redes), no demos de tutorial.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 custom-card border-0 shadow-sm p-3">
                             <div class="card-body">
-                                <span class="badge bg-primary mb-2" data-es="Web App" data-en="Web App">Web App</span>
-                                <h3 class="h5 card-title fw-bold" data-es="AprenderGratis.io" data-en="AprenderGratis.io">AprenderGratis.io</h3>
-                                <p class="card-text text-muted small" data-es="Plataforma educativa interactiva inspirada en roadmap.sh para enseñar programación de manera gratuita." data-en="Interactive educational platform inspired by roadmap.sh to teach programming for free.">Plataforma educativa interactiva inspirada en roadmap.sh para enseñar programación de manera gratuita.</p>
+                                <span class="badge bg-primary mb-2" data-es="Plataforma educativa" data-en="Education platform">Plataforma educativa</span>
+                                <h3 class="h5 card-title fw-bold">AprenderGratis.io</h3>
+                                <p class="card-text text-muted small" data-es="Plataforma inspirada en roadmap.sh: rutas de básico a avanzado, frontend, backend, diseño y SEO. Producto educativo a escala, con repo público." data-en="Platform inspired by roadmap.sh: paths from beginner to advanced, frontend, backend, design and SEO. Educational product at scale, with a public repo.">Plataforma inspirada en roadmap.sh: rutas de básico a avanzado, frontend, backend, diseño y SEO. Producto educativo a escala, con repo público.</p>
                             </div>
                             <div class="card-footer bg-transparent border-top-0">
                                 <a href="https://github.com/LeoPrograma369ARG/AprenderGratis.io" target="_blank" class="btn btn-violaceo shadow-red btn-sm w-100">
-                                    <!-- CUIDADO: El span protege al icono del script -->
-                                    <i class="bi bi-github me-1"></i> <span data-es="Ir al Ecosistema" data-en="Go to Ecosystem">Ir al Ecosistema</span>
+                                    <i class="bi bi-github me-1"></i> <span data-es="Ver ecosistema" data-en="View ecosystem">Ver ecosistema</span>
                                 </a>
                             </div>
                         </div>
@@ -626,14 +427,13 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 custom-card border-0 shadow-sm p-3">
                             <div class="card-body">
-                                <span class="badge bg-success mb-2" data-es="Plataforma" data-en="Platform">Plataforma</span>
-                                <h3 class="h5 card-title fw-bold" data-es="Gamer Rentable" data-en="Gamer Rentable">Gamer Rentable</h3>
-                                <p class="card-text text-muted small" data-es="Portal de monetización online, microtareas, afiliados y contenido de videojuegos retro." data-en="Online monetization portal, microtasks, affiliates and retro video game content.">Portal de monetización online, microtareas, afiliados y contenido de videojuegos retro.</p>
+                                <span class="badge bg-success mb-2" data-es="Portal multi-módulo" data-en="Multi-module portal">Portal multi-módulo</span>
+                                <h3 class="h5 card-title fw-bold">Gamer Rentable</h3>
+                                <p class="card-text text-muted small" data-es="Portal a gran escala: contenido, monetización, microtareas, afiliados y videojuegos retro. Varias verticales en un solo producto." data-en="Large-scale portal: content, monetization, microtasks, affiliates and retro games. Several verticals in one product.">Portal a gran escala: contenido, monetización, microtareas, afiliados y videojuegos retro. Varias verticales en un solo producto.</p>
                             </div>
                             <div class="card-footer bg-transparent border-top-0">
                                 <a href="#" class="btn btn-violaceo shadow-red btn-sm w-100">
-                                    <!-- CUIDADO: El span protege al icono del script -->
-                                    <i class="bi bi-box-arrow-up-right me-1"></i> <span data-es="Ir al Ecosistema" data-en="Go to Ecosystem">Ir al Ecosistema</span>
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> <span data-es="Ver ecosistema" data-en="View ecosystem">Ver ecosistema</span>
                                 </a>
                             </div>
                         </div>
@@ -641,14 +441,13 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 custom-card border-0 shadow-sm p-3">
                             <div class="card-body">
-                                <span class="badge bg-danger mb-2" data-es="Open Source" data-en="Open Source">Open Source</span>
-                                <h3 class="h5 card-title fw-bold" data-es="LeoPrograma369 Web" data-en="LeoPrograma369 Web">LeoPrograma369 Web</h3>
-                                <p class="card-text text-muted small" data-es="Plantilla completa optimizada para SEO, responsive y con soporte nativo para temas claro/oscuro." data-en="Complete template optimized for SEO, responsive and with native support for light/dark themes.">Plantilla completa optimizada para SEO, responsive y con soporte nativo para temas claro/oscuro.</p>
+                                <span class="badge bg-danger mb-2" data-es="Producto open source" data-en="Open source product">Producto open source</span>
+                                <h3 class="h5 card-title fw-bold">LeoPrograma369 Web</h3>
+                                <p class="card-text text-muted small" data-es="Plantilla-producto: SEO, i18n ES/EN, tema claro/oscuro, GitHub Pages y dominio propio. Portafolio y base reutilizable del ecosistema." data-en="Template-product: SEO, EN/ES i18n, light/dark theme, GitHub Pages and custom domain. Portfolio and reusable base of the ecosystem.">Plantilla-producto: SEO, i18n ES/EN, tema claro/oscuro, GitHub Pages y dominio propio. Portafolio y base reutilizable del ecosistema.</p>
                             </div>
                             <div class="card-footer bg-transparent border-top-0">
                                 <a href="https://github.com/LeoPrograma369ARG" target="_blank" class="btn btn-violaceo shadow-red btn-sm w-100">
-                                    <!-- CUIDADO: El span protege al icono del script -->
-                                    <i class="bi bi-code-square me-1"></i> <span data-es="Ir al Ecosistema" data-en="Go to Ecosystem">Ir al Ecosistema</span>
+                                    <i class="bi bi-code-square me-1"></i> <span data-es="Ver ecosistema" data-en="View ecosystem">Ver ecosistema</span>
                                 </a>
                             </div>
                         </div>
@@ -657,63 +456,26 @@
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- SECCIÓN 7: CONTACTO & REDES SOCIALES       -->
-        <!-- ========================================== -->
         <section id="contacto" class="py-5">
             <div class="container text-center">
                 <div class="mb-5">
                     <h2 class="fw-bold" data-es="Contacto & Redes Sociales" data-en="Contact & Social Networks">Contacto & Redes Sociales</h2>
                     <p class="text-muted" data-es="Conéctate conmigo a través de cualquiera de mis canales oficiales" data-en="Connect with me through any of my official channels">Conéctate conmigo a través de cualquiera de mis canales oficiales</p>
                 </div>
-
                 <div class="row g-3 justify-content-center">
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <a href="https://wa.me/" target="_blank" class="btn btn-outline-success w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-whatsapp fs-3 d-block mb-1"></i> <span>WhatsApp</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <a href="https://t.me/" target="_blank" class="btn btn-outline-info w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-telegram fs-3 d-block mb-1"></i> <span>Telegram</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <a href="https://youtube.com/" target="_blank" class="btn btn-outline-danger w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-youtube fs-3 d-block mb-1"></i> <span>YouTube</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <a href="https://instagram.com/" target="_blank" class="btn btn-outline-primary w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-instagram fs-3 d-block mb-1"></i> <span>Instagram</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <a href="https://facebook.com/" target="_blank" class="btn btn-outline-primary w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-facebook fs-3 d-block mb-1"></i> <span>Facebook</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <a href="https://x.com/" target="_blank" class="btn btn-outline-dark w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-twitter-x fs-3 d-block mb-1"></i> <span>X (Twitter)</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <a href="https://tiktok.com/" target="_blank" class="btn btn-outline-dark w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-tiktok fs-3 d-block mb-1"></i> <span>TikTok</span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3">
-                        <a href="https://github.com/LeoPrograma369ARG" target="_blank" class="btn btn-outline-secondary w-100 p-3 shadow-sm hover-grow">
-                            <i class="bi bi-github fs-3 d-block mb-1"></i> <span>GitHub</span>
-                        </a>
-                    </div>
+                    <div class="col-6 col-sm-4 col-md-3"><a href="https://wa.me/" target="_blank" class="btn btn-outline-success w-100 p-3 shadow-sm hover-grow"><i class="bi bi-whatsapp fs-3 d-block mb-1"></i> <span>WhatsApp</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-3"><a href="https://t.me/" target="_blank" class="btn btn-outline-info w-100 p-3 shadow-sm hover-grow"><i class="bi bi-telegram fs-3 d-block mb-1"></i> <span>Telegram</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-3"><a href="https://youtube.com/" target="_blank" class="btn btn-outline-danger w-100 p-3 shadow-sm hover-grow"><i class="bi bi-youtube fs-3 d-block mb-1"></i> <span>YouTube</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-3"><a href="https://instagram.com/" target="_blank" class="btn btn-outline-primary w-100 p-3 shadow-sm hover-grow"><i class="bi bi-instagram fs-3 d-block mb-1"></i> <span>Instagram</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-3"><a href="https://facebook.com/" target="_blank" class="btn btn-outline-primary w-100 p-3 shadow-sm hover-grow"><i class="bi bi-facebook fs-3 d-block mb-1"></i> <span>Facebook</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-3"><a href="https://x.com/" target="_blank" class="btn btn-outline-dark w-100 p-3 shadow-sm hover-grow"><i class="bi bi-twitter-x fs-3 d-block mb-1"></i> <span>X (Twitter)</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-3"><a href="https://tiktok.com/" target="_blank" class="btn btn-outline-dark w-100 p-3 shadow-sm hover-grow"><i class="bi bi-tiktok fs-3 d-block mb-1"></i> <span>TikTok</span></a></div>
+                    <div class="col-6 col-sm-4 col-md-3"><a href="https://github.com/LeoPrograma369ARG" target="_blank" class="btn btn-outline-secondary w-100 p-3 shadow-sm hover-grow"><i class="bi bi-github fs-3 d-block mb-1"></i> <span>GitHub</span></a></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-body-tertiary text-center py-4 border-top">
         <div class="container">
             <p class="mb-0 text-muted small">
@@ -722,16 +484,7 @@
         </div>
     </footer>
 
-    <!-- Bootstrap 5.3.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Script Personalizado -->
     <script src="script.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
-
-
-    
 </body>
 </html>
