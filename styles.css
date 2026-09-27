@@ -199,3 +199,13 @@ span.brand-text {
         font-size: clamp(1.15rem, 3.5vw, 1.35rem) !important;
     }
 }
+
+.btn-outline-dynamic {
+    color: var(--dynamic-color) !important;
+    border: 2px solid var(--dynamic-color) !important;
+    background: transparent !important;
+}
+.btn-outline-dynamic:hover {
+    background: var(--dynamic-color) !important;
+    color: #fff !important;
+}
