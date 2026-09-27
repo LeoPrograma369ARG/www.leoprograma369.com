@@ -209,3 +209,31 @@ span.brand-text {
     background: var(--dynamic-color) !important;
     color: #fff !important;
 }
+
+/* Botón Contacto: azul en claro, rojo en oscuro */
+.btn-outline-dynamic {
+    color: var(--dynamic-color) !important;
+    border: 2px solid var(--dynamic-color) !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.btn-outline-dynamic:hover,
+.btn-outline-dynamic:focus-visible {
+    background: var(--dynamic-color) !important;
+    color: #fff !important;
+}
+
+/* Marca del navbar */
+.navbar-brand .badge-icon {
+    font-size: 1.85rem;
+    color: var(--dynamic-color);
+}
+.navbar-brand .brand-text {
+    font-family: "Unbounded", system-ui, sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    color: var(--dynamic-color);
+}
+
