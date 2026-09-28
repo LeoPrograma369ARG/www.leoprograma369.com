@@ -36,22 +36,22 @@ if (themeToggleBtn) {
 // ==========================================================
 const phrasesByLang = {
     es: [
-        'Desarrollo Web Frontend',
-        'Desarrollo Web Backend',
-        'Diseño Web Responsive',
+        'Desarrollo Web para empresas',
+        'Frontend y Backend',
+        'Diseño Web profesional',
+        'Aplicaciones y productos digitales',
         'Programación de básico a avanzado',
-        'Proyectos a gran escala',
-        'Aprendizaje y educación digital',
-        'Optimización SEO para Google'
+        'SEO para Google',
+        'Proyectos a gran escala'
     ],
     en: [
-        'Frontend Web Development',
-        'Backend Web Development',
-        'Responsive Web Design',
+        'Web Development for companies',
+        'Frontend and Backend',
+        'Professional Web Design',
+        'Apps and digital products',
         'Programming from beginner to advanced',
-        'Large-scale projects',
-        'Learning and digital education',
-        'SEO optimization for Google'
+        'SEO for Google',
+        'Large-scale projects'
     ]
 };
 
