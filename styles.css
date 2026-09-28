@@ -141,3 +141,9 @@ body {
 .hover-grow:hover {
     transform: translateY(-3px);
 }
+
+/* Typewriter: azul en claro, rojo en oscuro */
+#typewriter,
+.hero-section .text-danger {
+    color: var(--dynamic-color) !important;
+}
