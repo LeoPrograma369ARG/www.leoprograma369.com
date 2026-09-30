@@ -1,0 +1,49 @@
+# ==========================================================
+# Patrocinios / propinas / donaciones
+# Archivo: .github/FUNDING.yml
+# GitHub muestra el botón "Sponsor / Patrocina" con esto.
+# Dejá comentado (#) lo que NO tengas todavía.
+# ==========================================================
+
+# GitHub Sponsors (hasta 4 usuarios). Tu usuario real:
+github: [LeoPrograma369ARG]
+
+# Patreon — solo el usuario, no la URL
+# patreon: LeoPrograma369
+
+# Open Collective — slug de la colectiva
+# open_collective: leo-programa-369
+
+# Ko-fi — usuario (ko-fi.com/USUARIO)
+# ko_fi: leoprograma369
+
+# Tidelift — plataforma/paquete  ej: npm/nombre
+# tidelift: npm/leo-programa-369
+
+# LF Community Bridge — nombre del proyecto
+# community_bridge: leo-programa-369
+
+# Liberapay — usuario
+# liberapay: LeoPrograma369
+
+# IssueHunt — usuario
+# issuehunt: LeoPrograma369ARG
+
+# LFX Crowdfunding — nombre del proyecto
+# lfx_crowdfunding: leo-programa-369
+
+# Polar.sh — usuario
+# polar: LeoPrograma369ARG
+
+# Buy Me a Coffee — usuario (buymeacoffee.com/USUARIO)
+# buy_me_a_coffee: leoprograma369
+
+# thanks.dev — usuario
+# thanks_dev: github/LeoPrograma369ARG
+
+# Hasta 4 enlaces propios (PayPal, Mercado Pago, web, etc.)
+custom:
+  - https://leoprograma369.com/#contacto
+  - https://paypal.me/TU_USUARIO
+  - https://link.mercadopago.com.ar/TU_USUARIO
+  - https://ko-fi.com/TU_USUARIO
